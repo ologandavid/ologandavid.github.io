@@ -1,2 +1,1 @@
 # ologandavid.github.io
-Portfolio
