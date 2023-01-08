@@ -28,7 +28,7 @@
 			margin-bottom: 0;
 			opacity: 1;
 			visibility: visible;
-			position: absolute;
+			position: absolute; //Added
 			a {
 				border: 0;
 			}
@@ -41,7 +41,7 @@
 			height: 3em;
 			letter-spacing: _font(kern-heading);
 			line-height: 3em;
-			position: relative;
+			position: relative; //Changed from absolute
 			right: 0.7em;
 			text-transform: uppercase;
 			top: 0.7em;
