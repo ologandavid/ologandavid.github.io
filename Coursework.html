@@ -52,16 +52,31 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-
+									<!-- 6.1151 Begins Here-->
 									<h3 class="major">6.1151 : MicroComputer Project Laboratory (Spring 2022)</h3>
-									<p>Designed a Modified Version of Duck Hunt Video Game using Two PSOC's.
-										The smaller PSOC Stick operated the wireless controller while the larger PSOC handled game mechanics and updating the screen through VGA.</p> 
-									<p></p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media2.mov" type="video/mp4"></video></span></p>
-									<p>The controller sent 3 encoded bytes over Bluetooth to the larger PSOC which would decode it and update the cursor and target positions accordingly.</p>
-									<p><span class="image left"><img src='images/6.1151/Picture1.png' alt="" /></span></p>
-									<p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media1.mp4" type="video/mp4"></video></span></p>
-								
-
+									<p><b>Objective:</b><br>
+									The objective of this project was to build an assortment of games that would take advantage of the modularity and flexibility of the PSOC5.  The games would be played using an accompanying wireless controller run on a PSOC5LP Stick. Ideally, the two processors would run separate programs, but would operate smoothly enough not to impede gameplay. The system should be able to run three distinct games, including TIC-TAC-TOE, Pong, and a simple version of Duck Hunt. </p>
+									<p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media2.mov" type="video/mp4"></video></span></p>
+									<p><b>Solution:</b><br>
+										My design featured two distinct parts. A wireless controller powered by a PSOC Stick and a Receiver/VGA Connector attached to the main PSOC5. The PSOC Stick encoded controller button states from the user and would transmit them wirelessly to the PSOC5 responsible for running game mechanics and updating the associated monitor.<br>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture3.jpg" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture4.jpg"  alt="" /></span></div>
+											</div>
+										</div>
+										On the main PSOC 5, a VGA2 board was wired for 2-bit color using an 74LS245N. Furthermore, a HC05 Wireless Bluetooth module and LCD Display was also wired to support Bluetooth communication with the separate controller. On the PSOC Stick, four buttons, a joystick potentiometer and HC05 module were attached to function as a controller.<br>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture1.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture2.png"  alt="" /></span></div>
+											</div>
+										</div>
+										The PSOC Stick encoded joystick positions and button states as a series of bytes representing cursor velocities and button presses. The main PSOC5 would generate a fixed frame given the current state of the game and upload that to the buffer to update the monitor. An ISR was used to receive bytes and update cursor positions and remaining targets without conflicting with screen refresh rates. The ISR triggered at a slower clock to prioritize screen refresh rates. Each game was coded in C and could be selected on startup.</p> 
+									<span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media1.mp4" type="video/mp4"></video></span>
+									<p><a href="https://github.com/ologandavid" class="special">Check out my Github:</a></p>
+									<p><a href="PDFs/6_1151_Final_Project_Report (1).pdf" class = 'special'>See the Complete Paper Here: </a></p>
+									<!-- 2.009 Begins Here-->
 									<h3 class="major">2.009: Project Engineering Processes (Fall 2021)  </h3>
 									<div class="box alt">
 										<div class="row gtr-uniform">
