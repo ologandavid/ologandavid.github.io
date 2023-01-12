@@ -74,17 +74,17 @@
 										</div>
 										The PSoC Stick encoded joystick positions and button states as a series of bytes representing cursor velocities and button presses. The main PSoC5 would generate a fixed frame given the current state of the game and upload that to the buffer to update the monitor. An ISR was used to receive bytes and update cursor positions and remaining targets without conflicting with screen refresh rates. The ISR triggered at a slower clock to prioritize screen refresh rates. Each game was coded in C and could be selected on startup.</p> 
 									<span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media1.mp4" type="video/mp4"></video></span>
-									<p><b>Applied Skills:</b> C (Programming), Circuit Design, Analysis, and Construction
+									<p><b>Applied Skills:</b> C (Programming), Assembly (Programming), Circuit Design, Analysis, and Construction
 									</p>
 									<ul class="actions fit">
-										<li><a href="#https://github.com/ologandavid" class="button primary fit">Github:</a></li>
+										<li><a href="https://github.com/ologandavid" class="button primary fit">Github:</a></li>
 										<li><a href="PDFs/6_1151_Final_Project_Report (1).pdf" class="button fit">See the Complete Paper Here:</a></li>
 									</ul>
 									
 									<!-- 2.009 Begins Here-->
 									<h3 class="major">2.009: Project Engineering Processes (Fall 2021)  </h3>
 									<p><b>Objective:</b><br><span class="image right"><img src="images/2.009/prezi2.jpg" alt="" /></span>
-										As a student in 2.009, MIT’s Mechanical Engineering capstone class, teams of 20 students work together to develop and present a marketable product. Over the course of the semester, students experience the design process of a product development firm, ranging from ideation, studying market data, building models, and ultimately the construction of a quality alpha prototype. Ultimately, the semester culminates in a product demonstration and presentation broadcasted online.
+										As a student in 2.009, MIT’s Mechanical Engineering capstone class, teams of 20 students work together in Pappalardo Lab to develop and present a marketable product. Over the course of the semester, students experience the design process of a product development firm, ranging from ideation, studying market data, building models, and ultimately the construction of a quality alpha prototype. Ultimately, the semester culminates in a product demonstration and presentation broadcasted online.
 										<br><br>
 										<b>Solution:</b><br>
 										My team (Silver) designed and manufactured Aisle Assist, a compact aisle wheelchair that eliminates the uncomfortable lifting of paraplegic flyers from their wheelchairs to their airplane seat. It takes advantage of removable, height adjustable seat panels and a backrest attached to linear rails, to gently slide and deposit users onto their aisle seat.
@@ -171,7 +171,12 @@
 											</div>
 										</div>
 									<h3 class="major">6.012: Nanoelectronics and Computing Systems (Spring 2022) </h3>
-									<p>End of Term Design Challenge: In 6.012, I was tasked with designing a processor, given doping and size constaints. Feel free to read my report below: </p>
+									<p><b>Objective:</b><br>
+										<br><br>
+										<b>Solution:</b><br>
+										<br><br>
+										<b>Applied Skills:</b> MATLAB, Sentaurus TCAD
+										</p>
 									<iframe src="PDFs/6_012_Design_Project.pdf" width="100%" height="500px">
 									</iframe>
 
@@ -226,13 +231,16 @@
 										I designed the aluminum molds for these parts in Autodesk Fusion and manufactured the tooling on the HAAS CNC. I also helped thermoform the letters and punched out the desired features using a die.
 										The majority of the manufacturing took place at MIT’s LMP (Laboratory for Manufacturing and Productivity).
 										<br><br>
-										<b>Applied Skills:</b> Design and Manufacturing, , Computer Aided Design, Fabrication and Machining, Autodesk Fusion <br></p>
-
+										<b>Applied Skills:</b> Design and Manufacturing, Computer Aided Design, Fabrication and Machining, Autodesk Fusion <br></p>
+									
+									<!-- 2.086 Begins Here-->
 									<h3 class="major">2.086: Numerical Computation for Mechanical Engineers (Spring 2020) </h3>
-									<p>Used MATLAB to generate code to drive an Etch A Sketch. I designed an algorithm to segment images into a sequence of connected lines, that minimized required computation, while preserving the essence of the image
-										My group then converted subsequent array into useable G-code that powered stepper motors attached to an Etch A Sketch’s knobs.
-										</p>
-										<div class="box alt">
+									<p><b>Objective:</b><br>
+										While taking MIT’s 2.086: Numerical Computation for Mechanical Engineers, students focus on numerical methods, linear and differential equations and develop familiarity with MATLAB programming. At the end of the semester, students are asked to use MATLAB to solve a physical problem in the real world. 
+										<br><br>
+										<b>Solution:</b><br>
+										For our term project, I worked in a group of three to develop MATLAB code that would mimic the functionality of an Etch A Sketch, a common children’s drawing device that uses two rotating knobs to draw on a screen. Ideally, the goal of the project was to generate a script that would take in an input image file and output functional G-code that could be used to drive the Etch A Sketch knobs.
+ 										<div class="box alt">
 											<div class="row gtr-uniform">
 												<div class="col-6"><span class="image fit"><img src="images/2.086/Picture28.png" alt="" /></span></div>
 												<div class="col-3"><span class="image fit"><img src="images/2.086/Picture26.png" alt="" /></span></div>
@@ -240,29 +248,37 @@
 												<!--<div class="col-3-2"><span class="image fit"><img src="images/2.008/Picture12.png" alt="" /></span></div>-->
 											</div>
 										</div>
-										<!--
-										<span class="image left"><img src="images/2.086/Picture28.png" alt="" /></span> 
-										<span class="image left"><img src="images/2.086/Picture26.png" alt="" /></span> 
-										<span class="image left"><img src="images/2.086/Picture27.png" alt="" /></span> -->
-										
+										My responsibilities included the design of an algorithm to segment images into a sequence of connected lines, that minimized the computation, while preserving the essence of the image. MATLAB’s built-in edge detection was used to divide the image into line segments, since features like shading and line thickness would drastically increase the program’s runtime. By drawing exclusively edges we can preserve the content of the image and get a decent representation of its features.
+										<br><br>
+										However, since an Etch A Sketch’s pen never leaves the page, a method for connecting the segments into one continuous line was needed. The algorithm optimized the path by first checking for nearest neighbors, and then opting to minimize the length of additional line segments needed to connect the image. My group then converted the subsequent array of line endpoints, into usable G-code that would actuate stepper motors attached to the Etch A Sketch’s knobs. 
+										<br><br>
 										<b>Applied Skills:</b> MATLAB <br>
 										</p>
-										<!-- <p><span class="image left"><img src="images/2.086/Picture28.png" alt="" /></span> </p> -->
+									
+									<!-- 2.671 Begins Here-->
 									<h3 class="major">2.671: Measurement and Instrumentation (Fall 2020) </h3>
-									<p> </p>
+									<p><b>Objective:</b><br>
+										In MIT’s 2.671 Measurement and Instrumentation course, students the semester exploring measurement methods and experimental techniques typically encountered by mechanical engineers. Concurrently, students are asked to take measurements and write a formal research paper on a topic of their choice. The semester ends with a formal poster session in which students are asked to share their work with other students and faculty.
+										<br><br>
+										<b>Solution:</b><br>
+										As I was taking the course during COVID, the scope of my project was limited to what I had readily available at home. Combining my love with basketball and engineering, I decided to explore the relationship between arm angle and jump force on basketball shot distance. Changes in arm angle were measured using a Vernier Goniometer, and two force plates under the players feet were used to assess applied jumping force. Ultimately, it was found that there was a positive linear correlation between arm angular velocity and distance from the basket. Jumping Force also generally increased as distance from the basket increased. Missed shots could be identified only through changes in angular velocity. Additional investigation is still required on the impact of lateral changes in arm angle, player shot mechanics, and shot distances exceeding six meters. 
+										<br><br>
+										<b>Applied Skills:</b> Measurement and Instrumentation, Data Analysis, MATLAB
+									</p>
 									<iframe src="PDFs/2_671_Final_Paper.pdf" width="100%" height="500px"></iframe>
 									<ul class="actions fit">
 										<li><a href="PDFs/2.671 Final Poster.pdf" class="button primary fit">Class Poster:</a></li>
 										<li><a href="PDFs/Sports Summit 2021 David Ologan Poster.pdf" class="button fit">Sports Summit Poster:</a></li>
 									</ul>
 									
+									<!-- 2.00b Begins Here-->
 									<h3 class="major">2.00b : Toy Product Design (Spring 2019) </h3>
 									<p><b>Objective:</b><br>
 										As a student in 2.00b, MIT’s Toy Product Design course, students work in teams of 5 to produce a toy marketed for play and entertainment. With a focus on prototyping, aesthetic design, and safety, students present a novel product targeted towards young children at the end of the semester.
 										<br><br><span class="image left"><img src="images/2.00b/Picture23.png" alt="" /></span>
 										<b>Solution:</b><br>
 										
-										My team (Llama Team) designed and fabricated Asteroid Evader, a board game that takes inspiration from Cartoon Network’s Hole in the Wall. Players are tasked with recreating shapes shown on the removable slides out of playdoh before the timer runs out. At the end of each round, players retract the slider to see if their molded shape makes the cut.
+										My team (Llama Team) designed and fabricated Asteroid Evader, a board game that takes inspiration from Cartoon Network’s Hole in the Wall. Players are tasked with recreating shapes shown on the removable slides out of Play-Doh before the timer runs out. At the end of each round, players retract the slider to see if their molded shape makes the cut.
 										<br><br><span class="image right"><img src="images/2.00b/Picture21.png" alt="" /></span>
 										The game consists of over 20 unique shapes, cut out of ¼” acrylic sheets, an ABS 3-D printed slider, and milled plastic game board. The timer was housed in foam sprayed with acetone to mimic the surface features of an asteroid.
 										<br><br>
