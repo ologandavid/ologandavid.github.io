@@ -6,500 +6,721 @@
 	Modified by David Ologan for Personal Use
 -->
 <html>
-	<head>
-		<title>David Ologan - Coursework</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+
+<head>
+	<title>David Ologan - Coursework</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
 
-	<body class="is-preload">
+<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-				<header id="header" class="alt">
-					<!--<h1 id="logo"><a href="index.html">Portfolio</a></h1>-->
-					<nav>
-						<a href="#menu">Menu</a>
-					</nav>
-					<nav id = "menu">
-						<div class="inner">
-						<ul class="links">
-						<li><a href="index.html">Home</a></li>						
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+		<header id="header" class="alt">
+			<!--<h1 id="logo"><a href="index.html">Portfolio</a></h1>-->
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+			<nav id="menu">
+				<div class="inner">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
 						<li><a href="Education.html">Education</a></li>
 						<li><a href="Nav.html">Course Projects</a></li>
 						<li><a href="Work Experience.html">Work Experience</a></li>
 						<li><a href="Research.html">Research/ Projects</a></li>
 						<li><a href="resume/David_Ologan_Resume.pdf">Resume</a></li>
-						</ul>
-						<a href="#" class="close">Close</a>
-					</nav>
+					</ul>
+					<a href="#" class="close">Close</a>
+			</nav>
+	</div>
+	</header>
+	</header>
+
+	<!-- Wrapper -->
+	<section id="wrapper">
+		<header>
+			<div class="inner">
+				<h2>Coursework</h2>
+				<p>Capstone Projects, Labs, Writeups</p>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div class="wrapper">
+			<div class="inner">
+				<!-- 16.745 Begins Here-->
+				<h3 class="major" id="s16.745"> 16.745 : Optimal Control and Reinforcement Learning (Spring 2023)</h3>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/16.745/tmp.gif" alt="" /></span>
+						</div>
+						<div class="col-6"><span class="vid fit"><video width="640" height="360" controls>
+									<source src="images/16.745/meshcat1.mp4" type="video/mp4">
+								</video></span></div>
+					</div>
 				</div>
-				</header>
-					</header>
+				<p>In this paper we show a trajectory planning technique that mimics a monkey bar robot swinging from
+					bar to bar.
+					Using a hybrid system direct collocation (DIRCOL) trajectory optimization, we successfully
+					demonstrate the robot swinging
+					up from a dead hang to catch the first bar and swing to the subsequent bars. This DIRCOL technique
+					was tested on various
+					mass distributions in the robot as well as different bar separation distances to understand the
+					behavior with varying parameters.
+					In addition, we show the importance of a free time setup on the cost function in producing
+					consistent feasible trajectories using
+					this DIRCOL technique.
+				<p><b>Applied Skills: DIRCOL, Hybrid Systems, Lagrangian Dynamics, iPOPT Trajectory Optimization</b>
+				</p>
+				<ul class="actions fit">
+					<li><a href="https://github.com/ologandavid/MonkeyBarBot" class="button primary fit">Github:</a>
+					</li>
+					<li><a href="PDFs/MonkeyBot.pdf" class="button fit">See the Complete Paper Here:</a></li>
+				</ul>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Coursework</h2>
-								<p>Capstone Projects, Labs, Writeups</p>
-							</div>
-						</header>
+				<!-- 11.785 Begins Here-->
+				<h3 class="major" id="s11.785"> 11.785 : Introduction to Deep Learning (Spring 2023)</h3>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/11.785/Picture1.png"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/11.785/Picture1.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>In recent years, there has been a large research focus on dense video captioning.
+					Video captioning has applications in many fields such as autonomous driving,
+					video surveillance and creating captions for those with visual impairments. As
+					such, a novel approach is proposed by employing language models (LM) to help to
+					semantically align video features in an attempt to improve the overall performance
+					of dense video captioning. The baseline model for comparison, End-to-end dense
+					video captioning with parallel decoding (PDVC) [1], produced strong results
+					compared to many state of the art video captioning frameworks. PDVC is trained
+					on the ActivityNet and YouCook2 datasets but for this study only YouCook2
+					was used due to computational capacity limits. We propose the incorporation
+					of semantic alignment through the addition of a tuner network before the video
+					features are passed through the PDVC framework. Ablations were ran for different
+					tuner architectures and overall, the modified PDVC framework outperformed the
+					baseline PDVC in many evaluation metrics. Promising future extensions with
+					Semantic alignment and Dense Video Captioning remain with its application to
+					larger and more comprehensive data sets.
+					<br>
+				<p><b>Applied Skills: PyTorch, Linux, GCP, Machine Learning</b>
+				</p>
+				<ul class="actions fit">
+					<li><a href="https://github.com/ologandavid/ConstructionSiteHazardDetection"
+							class="button primary fit">Github:</a></li>
+					<li><a href="PDFs/11_785_Final_Project.pdf" class="button fit">See the Complete Paper Here:</a></li>
+				</ul>
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
-									<!-- 16.745 Begins Here-->
-									<h3 class="major" id = "s16.745"> 16.745 : Optimal Control and Reinforcement Learning (Spring 2023)</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="image fit"><img src="images/16.745/tmp.gif" alt="" /></span></div>
-											<div class="col-6"><span class="vid fit"><video width="640" height="360" controls><source src="images/16.745/meshcat1.mp4" type="video/mp4"></video></span></div>
-										</div>
-									</div>
-									<p>In this paper we show a trajectory planning technique that mimics a monkey bar robot swinging from bar to bar.
-										Using a hybrid system direct collocation (DIRCOL) trajectory optimization, we successfully demonstrate the robot swinging
-										up from a dead hang to catch the first bar and swing to the subsequent bars. This DIRCOL technique was tested on various
-										mass distributions in the robot as well as different bar separation distances to understand the behavior with varying parameters.
-										In addition, we show the importance of a free time setup on the cost function in producing consistent feasible trajectories using
-										this DIRCOL technique.
-									<p><b>Applied Skills: DIRCOL, Hybrid Systems, Lagrangian Dynamics, iPOPT Trajectory Optimization</b> 
-									</p>
-									<ul class="actions fit">
-										<li><a href="https://github.com/ologandavid/MonkeyBarBot" class="button primary fit">Github:</a></li>
-										<li><a href="PDFs/MonkeyBot.pdf" class="button fit">See the Complete Paper Here:</a></li>
-									</ul>
+				<!-- 24.678 Begins Here-->
+				<h3 class="major" id="s24.678"> 24.678 : Computer Vision for Engineers (Fall 2023)</h3>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/24.678/vid3.mp4" type="video/mp4">
+								</video></span></div>
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/24.678/vid4.mp4" type="video/mp4">
+								</video></span></div>
+					</div>
+				</div>
+				<p>
+				<p><b>Applied Skills: OpenCV, Python, Coordinate Transformations, Object Detection, Transfer
+						Learning</b>
+				</p>
+				<ul class="actions fit">
+					<li><a href="https://github.com/ologandavid/ConstructionSiteHazardDetection"
+							class="button primary fit">Github:</a></li>
+					<li><a href="PDFs/FinalPresentation.pptx" class="button fit">See the Complete Paper Here:</a></li>
+				</ul>
 
-									<!-- 11.785 Begins Here-->
-									<h3 class="major" id = "s11.785"> 11.785 : Introduction to Deep Learning (Spring 2023)</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="image fit"><img src="images/11.785/Picture1.png"  alt="" /></span></div>
-											<div class="col-6"><span class="image fit"><img src="images/11.785/Picture1.png"  alt="" /></span></div>
-										</div>
-									</div>
-									<p>In recent years, there has been a large research focus on dense video captioning.
-										Video captioning has applications in many fields such as autonomous driving,
-										video surveillance and creating captions for those with visual impairments. As
-										such, a novel approach is proposed by employing language models (LM) to help to
-										semantically align video features in an attempt to improve the overall performance
-										of dense video captioning. The baseline model for comparison, End-to-end dense
-										video captioning with parallel decoding (PDVC) [1], produced strong results
-										compared to many state of the art video captioning frameworks. PDVC is trained
-										on the ActivityNet and YouCook2 datasets but for this study only YouCook2
-										was used due to computational capacity limits. We propose the incorporation
-										of semantic alignment through the addition of a tuner network before the video
-										features are passed through the PDVC framework. Ablations were ran for different
-										tuner architectures and overall, the modified PDVC framework outperformed the
-										baseline PDVC in many evaluation metrics. Promising future extensions with
-										Semantic alignment and Dense Video Captioning remain with its application to
-										larger and more comprehensive data sets.
-										<br>
-									<p><b>Applied Skills: PyTorch, Linux, GCP, Machine Learning</b> 
-									</p>
-									<ul class="actions fit">
-										<li><a href="https://github.com/ologandavid/ConstructionSiteHazardDetection" class="button primary fit">Github:</a></li>
-										<li><a href="PDFs/11_785_Final_Project.pdf" class="button fit">See the Complete Paper Here:</a></li>
-									</ul>
+				<!-- 24.695 Begins Here-->
+				<h3 class="major" id="s24.695"> 24.695 : Modern Control Theory (Fall 2023)</h3>
+				<p>
 
-									<!-- 24.678 Begins Here-->
-									<h3 class="major" id = "s24.678"> 24.678 : Computer Vision for Engineers (Fall 2023)</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/24.678/vid3.mp4" type="video/mp4"></video></span></div>
-											<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/24.678/vid4.mp4" type="video/mp4"></video></span></div>
-										</div>
-									</div>
-									<p>
-									<p><b>Applied Skills: OpenCV, Python, Coordinate Transformations, Object Detection, Transfer Learning</b> 
-									</p>
-									<ul class="actions fit">
-										<li><a href="https://github.com/ologandavid/ConstructionSiteHazardDetection" class="button primary fit">Github:</a></li>
-										<li><a href="PDFs/FinalPresentation.pptx" class="button fit">See the Complete Paper Here:</a></li>
-									</ul>
+				</p>
+				<p><b>Applied Skills: Extended Kalman Filter SLAM, MPC, LQR, State Feedback , PID</b> </p>
 
-									<!-- 24.695 Begins Here-->
-									<h3 class="major" id = "s24.695"> 24.695 : Modern Control Theory (Fall 2023)</h3>
-									<p>
-										
-									</p>
-									<p><b>Applied Skills: Extended Kalman Filter SLAM, MPC, LQR, State Feedback , PID</b> </p>
+				<!-- 6.1151 Begins Here-->
+				<h3 class="major" id="s6.1151"> 6.1151 : MicroComputer Project Laboratory (Spring 2022)</h3>
+				<p><b>Objective:</b><br>
+					While taking MIT’s 6.1151, each student was tasked with creating a final project that would serve as
+					the cumulation of what we had learned about embedded microcontrollers, using either the 8051 or PSoC
+					(Programmable System on Chip). The objective of my particular project was to build an assortment of
+					games that would take advantage of the modularity and flexibility of the PSoC5. The games would be
+					played using an accompanying wireless controller run on a PSoC5LP Stick. Ideally, the two processors
+					would run separate programs, but would operate smoothly enough not to impede gameplay. The system
+					should be able to run three distinct games, including TIC-TAC-TOE, Pong, and a simple version of
+					Duck Hunt. </p>
+				<p><span class="vid fit"><video width="640" height="480" controls>
+							<source src="images/6.1151/Media2.mov" type="video/mp4">
+						</video></span></p>
+				<p><b>Solution:</b><br>
+					My design featured two distinct parts. A wireless controller powered by a PSoC Stick and a
+					Receiver/VGA Connector attached to the main PSoC5. The PSoC Stick encoded controller button states
+					from the user and would transmit them wirelessly to the PSoC5 responsible for running game mechanics
+					and updating the associated monitor.<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture3.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture4.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				On the main PSOC 5, a VGA2 board was wired for 2-bit color using an 74LS245N. Furthermore, a HC05
+				Wireless Bluetooth module and LCD Display was also wired to support Bluetooth communication with the
+				separate controller. On the PSoC Stick, four buttons, a joystick potentiometer and HC05 module were
+				attached to function as a controller.<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture1.png"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture2.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				The PSoC Stick encoded joystick positions and button states as a series of bytes representing cursor
+				velocities and button presses. The main PSoC5 would generate a fixed frame given the current state of
+				the game and upload that to the buffer to update the monitor. An ISR was used to receive bytes and
+				update cursor positions and remaining targets without conflicting with screen refresh rates. The ISR
+				triggered at a slower clock to prioritize screen refresh rates. Each game was coded in C and could be
+				selected on startup.</p>
+				<span class="vid fit"><video width="640" height="480" controls>
+						<source src="images/6.1151/Media1.mp4" type="video/mp4">
+					</video></span>
+				<p><b>Applied Skills:</b> C (Programming), Assembly (Programming), Circuit Design, Analysis, and
+					Construction
+				</p>
+				<ul class="actions fit">
+					<li><a href="https://github.com/ologandavid" class="button primary fit">Github:</a></li>
+					<li><a href="PDFs/6_1151_Final_Project_Report (1).pdf" class="button fit">See the Complete Paper
+							Here:</a></li>
+				</ul>
 
-									<!-- 6.1151 Begins Here-->
-									<h3 class="major" id = "s6.1151"> 6.1151 : MicroComputer Project Laboratory (Spring 2022)</h3>
-									<p><b>Objective:</b><br>
-										While taking MIT’s 6.1151, each student was tasked with creating a final project that would serve as the cumulation of what we had learned about embedded microcontrollers, using either the 8051 or PSoC (Programmable System on Chip). The objective of my particular project was to build an assortment of games that would take advantage of the modularity and flexibility of the PSoC5.  The games would be played using an accompanying wireless controller run on a PSoC5LP Stick. Ideally, the two processors would run separate programs, but would operate smoothly enough not to impede gameplay. The system should be able to run three distinct games, including TIC-TAC-TOE, Pong, and a simple version of Duck Hunt. </p>
-									<p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media2.mov" type="video/mp4"></video></span></p>
-									<p><b>Solution:</b><br>
-										My design featured two distinct parts. A wireless controller powered by a PSoC Stick and a Receiver/VGA Connector attached to the main PSoC5. The PSoC Stick encoded controller button states from the user and would transmit them wirelessly to the PSoC5 responsible for running game mechanics and updating the associated monitor.<br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture3.jpg" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture4.jpg"  alt="" /></span></div>
-											</div>
-										</div>
-										On the main PSOC 5, a VGA2 board was wired for 2-bit color using an 74LS245N. Furthermore, a HC05 Wireless Bluetooth module and LCD Display was also wired to support Bluetooth communication with the separate controller. On the PSoC Stick, four buttons, a joystick potentiometer and HC05 module were attached to function as a controller.<br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture1.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="images/6.1151/Picture2.png"  alt="" /></span></div>
-											</div>
-										</div>
-										The PSoC Stick encoded joystick positions and button states as a series of bytes representing cursor velocities and button presses. The main PSoC5 would generate a fixed frame given the current state of the game and upload that to the buffer to update the monitor. An ISR was used to receive bytes and update cursor positions and remaining targets without conflicting with screen refresh rates. The ISR triggered at a slower clock to prioritize screen refresh rates. Each game was coded in C and could be selected on startup.</p> 
-									<span class="vid fit"><video width="640" height="480" controls><source src="images/6.1151/Media1.mp4" type="video/mp4"></video></span>
-									<p><b>Applied Skills:</b> C (Programming), Assembly (Programming), Circuit Design, Analysis, and Construction
-									</p>
-									<ul class="actions fit">
-										<li><a href="https://github.com/ologandavid" class="button primary fit">Github:</a></li>
-										<li><a href="PDFs/6_1151_Final_Project_Report (1).pdf" class="button fit">See the Complete Paper Here:</a></li>
-									</ul>
-									
-									<!-- 2.009 Begins Here-->
-									<h3 class="major" id = "s2.009">2.009: Project Engineering Processes (Fall 2021)  </h3>
-									<p><b>Objective:</b><br><span class="image right"><img src="images/2.009/prezi2.jpg" alt="" /></span>
-										As a student in 2.009, MIT’s Mechanical Engineering capstone class, teams of 20 students work together in Pappalardo Lab to develop and present a marketable product. Over the course of the semester, students experience the design process of a product development firm, ranging from ideation, studying market data, building models, and ultimately the construction of a quality alpha prototype. Ultimately, the semester culminates in a product demonstration and presentation broadcasted online.
-										<br><br>
-										<b>Solution:</b><br>
-										My team (Silver) designed and manufactured Aisle Assist, a compact aisle wheelchair that eliminates the uncomfortable lifting of paraplegic flyers from their wheelchairs to their airplane seat. It takes advantage of removable, height adjustable seat panels and a backrest attached to linear rails, to gently slide and deposit users onto their aisle seat.
-										<br><br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-5"><span class="image fit"><img src="images/2.009/Picture5.png" alt="" /></span></div>
-												<div class="col-5"><span class="image fit"><img src="images/2.009/Picture6.png"  alt="" /></span></div>
-											</div>
-										</div>
-										Aisle Assist is rated for 99th percentile male (350 pounds) with a 2x Safety Factor ensuring it is safe for users of all shapes and sizes. The device is sized to pass airline regulations and the narrow space constraints of airline aisles.
-										<br><br><span class="image left"><img src="images/2.009/Picture9.png" alt="" /></span>
-										The chair works by lifting the wheelchair seat above the plane seat, sliding the user over, and retracting the backrest and seat panels once the user is comfortable. Linear rails and carriages enable the sliding action while the seat panels are raised with a winch situated behind the seat. With a 10:1 gear ratio and non-back drivable winch, the lifting mechanism is safe and requires 10 pounds of force from the flight attendant. The design was also included a deployable stabilization leg to prevent the chair from tipping during the transfer process.
-										<br><br>
-										My primary responsibilities included selecting linear rails given our load conditions. Since the system is essentially cantilevered, I was responsible for loading and bending calculations to prevent deflection and other beam failure modes. Additionally, as a member of the backrest assembly, I was responsible for the design and machining of key structural components on the mill, lathe, and waterjet. I presented during our teams technical review and helped with other deliverables throughout the semester. As our team’s financial officer, I was accountable for managing team finances, tracking expenses, and placing part orders.
-										<br><br>
-										<b>Various Prototypes, Back Winch Assembly:</b>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/2.009/Picture7.2.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.009/Picture8.1.png"  alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.009/Picture10.png"  alt="" /></span></div>
-											</div>
-										</div>
-									</p>
-									<p><b>Applied Skills:</b> Design and Manufacturing, MATLAB, Computer Aided Design, Machining/ Fabrication, Autodesk Fusion
-									</p>
-									<ul class="actions fit">
-										<li><a href="https://web.mit.edu/2.009/www/project/final_presentation/index.html?v=5" class="button primary fit">Final Presentation:</a></li>
-										<li><a href="PDFs/silver_brochure.pdf" class="button fit">Product Brochure:</a></li>
-										<li><a href="https://web.mit.edu/2.009/www/teams/notebook/index.html?s=dologan" class="button primary fit">Lab Notebook:</a></li>
-									</ul>
+				<!-- 2.009 Begins Here-->
+				<h3 class="major" id="s2.009">2.009: Project Engineering Processes (Fall 2021) </h3>
+				<p><b>Objective:</b><br><span class="image right"><img src="images/2.009/prezi2.jpg" alt="" /></span>
+					As a student in 2.009, MIT’s Mechanical Engineering capstone class, teams of 20 students work
+					together in Pappalardo Lab to develop and present a marketable product. Over the course of the
+					semester, students experience the design process of a product development firm, ranging from
+					ideation, studying market data, building models, and ultimately the construction of a quality alpha
+					prototype. Ultimately, the semester culminates in a product demonstration and presentation
+					broadcasted online.
+					<br><br>
+					<b>Solution:</b><br>
+					My team (Silver) designed and manufactured Aisle Assist, a compact aisle wheelchair that eliminates
+					the uncomfortable lifting of paraplegic flyers from their wheelchairs to their airplane seat. It
+					takes advantage of removable, height adjustable seat panels and a backrest attached to linear rails,
+					to gently slide and deposit users onto their aisle seat.
+					<br><br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-5"><span class="image fit"><img src="images/2.009/Picture5.png" alt="" /></span>
+						</div>
+						<div class="col-5"><span class="image fit"><img src="images/2.009/Picture6.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+				Aisle Assist is rated for 99th percentile male (350 pounds) with a 2x Safety Factor ensuring it is safe
+				for users of all shapes and sizes. The device is sized to pass airline regulations and the narrow space
+				constraints of airline aisles.
+				<br><br><span class="image left"><img src="images/2.009/Picture9.png" alt="" /></span>
+				The chair works by lifting the wheelchair seat above the plane seat, sliding the user over, and
+				retracting the backrest and seat panels once the user is comfortable. Linear rails and carriages enable
+				the sliding action while the seat panels are raised with a winch situated behind the seat. With a 10:1
+				gear ratio and non-back drivable winch, the lifting mechanism is safe and requires 10 pounds of force
+				from the flight attendant. The design was also included a deployable stabilization leg to prevent the
+				chair from tipping during the transfer process.
+				<br><br>
+				My primary responsibilities included selecting linear rails given our load conditions. Since the system
+				is essentially cantilevered, I was responsible for loading and bending calculations to prevent
+				deflection and other beam failure modes. Additionally, as a member of the backrest assembly, I was
+				responsible for the design and machining of key structural components on the mill, lathe, and waterjet.
+				I presented during our teams technical review and helped with other deliverables throughout the
+				semester. As our team’s financial officer, I was accountable for managing team finances, tracking
+				expenses, and placing part orders.
+				<br><br>
+				<b>Various Prototypes, Back Winch Assembly:</b>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/2.009/Picture7.2.jpg"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.009/Picture8.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.009/Picture10.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				</p>
+				<p><b>Applied Skills:</b> Design and Manufacturing, MATLAB, Computer Aided Design, Machining/
+					Fabrication, Autodesk Fusion
+				</p>
+				<ul class="actions fit">
+					<li><a href="https://web.mit.edu/2.009/www/project/final_presentation/index.html?v=5"
+							class="button primary fit">Final Presentation:</a></li>
+					<li><a href="PDFs/silver_brochure.pdf" class="button fit">Product Brochure:</a></li>
+					<li><a href="https://web.mit.edu/2.009/www/teams/notebook/index.html?s=dologan"
+							class="button primary fit">Lab Notebook:</a></li>
+				</ul>
 
-									<!-- 6.131 Begins Here-->
-									<h3 class="major" id = "s6.131">6.131: Power Electronics Laboratory (Fall 2021) </h3>
-									<p><b>Objective:</b><br>
-									While taking MIT’s 6.131, students learn to design and build power electronic circuits through a variety of labs. These labs include the construction of drive circuitry for an electric go-cart, flash strobes, computer power supplies, three-phase inverters for AC motors, and resonant drives for lamp ballasts. The semester ends with a final project in an area of interest to the student that incorporates the semesters exploration into the analysis of such systems.
-									
-									</p>
-									<h4 class = "major">36 V Go-Cart Drive Circuitry </h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media2.MOV" type="video/mp4"></video></span></div>
-											<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media1.MOV" type="video/mp4"></video></span></div>
-										</div>
-									</div>
-									
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-3"></div>
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture7.1.jpg" alt="" /></span></div>
-											<div class="col-3"></div>
-										</div>
-									</div>
-									<p>Wired a Buck Converter Drive for Go Cart DC Drive Motor. The MOSFET Drivers are run on 30 kHz alternating delay signals. An LC low pass filter, smoothed the input to Go Cart Motor.</p>
-									
+				<!-- 6.131 Begins Here-->
+				<h3 class="major" id="s6.131">6.131: Power Electronics Laboratory (Fall 2021) </h3>
+				<p><b>Objective:</b><br>
+					While taking MIT’s 6.131, students learn to design and build power electronic circuits through a
+					variety of labs. These labs include the construction of drive circuitry for an electric go-cart,
+					flash strobes, computer power supplies, three-phase inverters for AC motors, and resonant drives for
+					lamp ballasts. The semester ends with a final project in an area of interest to the student that
+					incorporates the semesters exploration into the analysis of such systems.
 
-									<h4 class = "major">Flourescent Lamp Ballast </h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media3.MOV" type="video/mp4"></video></span></div>
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture8.1.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-3"></div>
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture9.1.png" alt="" /></span></div>
-											<div class="col-3"></div>
-										</div>
-									</div>
-									<p>Constructed a Resonant Converter for Fluorescent Lamp Ballast. Resonant Frequency to strike the lamp achieved between 30-40 kHz. </p>
-				
-									<h4 class = "major">200 V DC Power Supply</h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture10.1.png" alt="" /></span></div>
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture11.1.png" alt="" /></span></div>
-										</div>
-									</div>
-										<p>Built a 200V DC Power Supply with Transformer and Clamp that operates at CCM (Continuous Conduction Mode) with a nominal voltage across Cclamp of 120 V.</p>
-									
-									<h4 class = "major">DCM Boost LED Driver/Desk Lamp </h4>
-									
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-6"><span class="image fit"><img src="images/6.131/Picture12.2.png" alt="" /></span></div>
-											<!--<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media4.MOV" type="video/mp4"></div>-->
-											<div class="col-3"><span class="image fit"><img src="images/6.131/Picture13.1.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media4.MOV" type="video/mp4"></video></span></p>
-									
-									<h4 class = "major"> Brushed DC Motor Build </h4>
-									<p><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media5.MOV" type="video/mp4"></video></span></p>
-									
-									<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="images/6.131/Picture14.jpg" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="images/6.131/Picture15.jpg" alt="" /></span></div>
-											</div>
-										</div>
-									
-									<h4 class = "major">Three Phase Inverter, Induction Motor</h4>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-5"><span class="image fit"><img src="images/6.131/Picture16.1.png" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="images/6.131/Picture17.1.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/6.131/Picture18.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/6.131/Picture19.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/6.131/Picture20.2.png" alt="" /></span></div>
-											</div>
-										</div>
-										<p>Finite State Machine Drive for Three Phase Bridge Induction Motor Drive. System is driven by 21 kHz PWM Oscillator with a variable duty cycle. </p>
+				</p>
+				<h4 class="major">36 V Go-Cart Drive Circuitry </h4>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/6.131/Media2.MOV" type="video/mp4">
+								</video></span></div>
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/6.131/Media1.MOV" type="video/mp4">
+								</video></span></div>
+					</div>
+				</div>
 
-										<h4 class = "major"> Bi-Directional Motor Controller </h4>
-										<p>For my final project, I dedicated the last four weeks of the semester implementing bi-directional motor control, with a feedback loop to implement cruise control. Essentially, the circuit would spin the motor in both directions, and after a button was pressed, the motor would try its best to keep its current speed constant even after loading. To do this, I built an H-Bridge, with PWM motor control and an adjustable duty cycle. Subsequently, I used an ADC and a DAC as a sample and hold, to record the back EMF of the motor once the button was pressed. Then using this as the reference voltage, I designed a type II compensator with the desired gains to automatically ramp up the duty cycle when necessary. </p>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-3"></div>
-												<div class="col-6"><span class="image fit"><img src="images/6.131/Schematic4.png" alt="" /></span></div>
-												<div class="col-3"></div>
-											</div>
-										</div>
-										<p> <b>Applied Skills:</b> Circuit Construction, Analysis and Design
-										</p>
-
-									<!-- 6.012 Begins Here-->
-									<h3 class="major" id = "s6.012">6.012: Nanoelectronics and Computation Systems (Spring 2022) </h3>
-									<p><b>Objective:</b><br>
-										In 6.012, Nanoelectronics and Computation Systems, students learn the basic concepts of semiconductor physics and are expected to be able to analyze and predict device performance based on scaling laws and physical structure. At the end of the semester, students are given an existing ARM microprocessor structure and are asked to propose an energy efficient design that meets spec and operates at 200 MHz. 
-										<br><br>
-										<b>Solution:</b><br>
-										Over the last two weeks of the semester, my group made a total of 4 changes to the existing semiconductor design to optimize its performance. We decreased the thickness of the oxide to 4 nm in order to reduce the impact of parasitic capacitances on our MOSFET. Changing the material composition of our spacers to one with a lower permittivity helped reduce our leakage capacitance.
-										<br><br>
-										We also increased the doping concentration of our Source and Drain to the upper limit to increase the number of carriers in our channel, and by extension our current. Finally, we decreased our operating voltage to 1.75 V to meet spec. 
-										Microprocessor performance was modeled in Sentaurus and calculations for gate capacitance were completed in MATLAB. For more detail on the analysis, see the paper below.
-										<br><br>
-										<iframe src="PDFs/6_012_Design_Project.pdf" width="100%" height="500px">
-										</iframe>
-										</p>
-									<p> <b>Applied Skills:</b> MATLAB, Sentaurus TCAD
-										</p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture7.1.jpg"
+									alt="" /></span></div>
+						<div class="col-3"></div>
+					</div>
+				</div>
+				<p>Wired a Buck Converter Drive for Go Cart DC Drive Motor. The MOSFET Drivers are run on 30 kHz
+					alternating delay signals. An LC low pass filter, smoothed the input to Go Cart Motor.</p>
 
 
-									<!-- 2.12 Begins Here-->
-									<h3 class="major" id = "s2.12">2.12: Introduction to Robotics (Spring 2021) </h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/2.12/Picture37.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/2.12/Picture35.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/2.12/Picture36.png" alt="" /></span></div>
-										</div>
-									</div>
-									<p>Tuned a PID Controller and used arm kinematics to control the motion of robot arm, and draw desired shapes. 
-										Used ROS, Computer Vision/ Image Processing to control UR5e robot arm. 
-										Correctly identified colored bottles and transported them onto a basket with the UR5e arm for term project.
-										Term Project attempted to mimic the control of telepresence robots in hospitals.
-									<br><br>
-									<b>Applied Skills:</b> ROS, OpenCV, Python (Programming) <br>
-										</p>
+				<h4 class="major">Flourescent Lamp Ballast </h4>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/6.131/Media3.MOV" type="video/mp4">
+								</video></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture8.1.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture9.1.png"
+									alt="" /></span></div>
+						<div class="col-3"></div>
+					</div>
+				</div>
+				<p>Constructed a Resonant Converter for Fluorescent Lamp Ballast. Resonant Frequency to strike the lamp
+					achieved between 30-40 kHz. </p>
+
+				<h4 class="major">200 V DC Power Supply</h4>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture10.1.png"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture11.1.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>Built a 200V DC Power Supply with Transformer and Clamp that operates at CCM (Continuous Conduction
+					Mode) with a nominal voltage across Cclamp of 120 V.</p>
+
+				<h4 class="major">DCM Boost LED Driver/Desk Lamp </h4>
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture12.2.png"
+									alt="" /></span></div>
+						<!--<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/6.131/Media4.MOV" type="video/mp4"></div>-->
+						<div class="col-3"><span class="image fit"><img src="images/6.131/Picture13.1.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p><span class="vid fit"><video width="640" height="480" controls>
+							<source src="images/6.131/Media4.MOV" type="video/mp4">
+						</video></span></p>
+
+				<h4 class="major"> Brushed DC Motor Build </h4>
+				<p><span class="vid fit"><video width="640" height="480" controls>
+							<source src="images/6.131/Media5.MOV" type="video/mp4">
+						</video></span></p>
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture14.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture15.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+
+				<h4 class="major">Three Phase Inverter, Induction Motor</h4>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-5"><span class="image fit"><img src="images/6.131/Picture16.1.png"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Picture17.1.jpg"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/6.131/Picture18.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/6.131/Picture19.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/6.131/Picture20.2.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				<p>Finite State Machine Drive for Three Phase Bridge Induction Motor Drive. System is driven by 21 kHz
+					PWM Oscillator with a variable duty cycle. </p>
+
+				<h4 class="major"> Bi-Directional Motor Controller </h4>
+				<p>For my final project, I dedicated the last four weeks of the semester implementing bi-directional
+					motor control, with a feedback loop to implement cruise control. Essentially, the circuit would spin
+					the motor in both directions, and after a button was pressed, the motor would try its best to keep
+					its current speed constant even after loading. To do this, I built an H-Bridge, with PWM motor
+					control and an adjustable duty cycle. Subsequently, I used an ADC and a DAC as a sample and hold, to
+					record the back EMF of the motor once the button was pressed. Then using this as the reference
+					voltage, I designed a type II compensator with the desired gains to automatically ramp up the duty
+					cycle when necessary. </p>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/6.131/Schematic4.png"
+									alt="" /></span></div>
+						<div class="col-3"></div>
+					</div>
+				</div>
+				<p> <b>Applied Skills:</b> Circuit Construction, Analysis and Design
+				</p>
+
+				<!-- 6.012 Begins Here-->
+				<h3 class="major" id="s6.012">6.012: Nanoelectronics and Computation Systems (Spring 2022) </h3>
+				<p><b>Objective:</b><br>
+					In 6.012, Nanoelectronics and Computation Systems, students learn the basic concepts of
+					semiconductor physics and are expected to be able to analyze and predict device performance based on
+					scaling laws and physical structure. At the end of the semester, students are given an existing ARM
+					microprocessor structure and are asked to propose an energy efficient design that meets spec and
+					operates at 200 MHz.
+					<br><br>
+					<b>Solution:</b><br>
+					Over the last two weeks of the semester, my group made a total of 4 changes to the existing
+					semiconductor design to optimize its performance. We decreased the thickness of the oxide to 4 nm in
+					order to reduce the impact of parasitic capacitances on our MOSFET. Changing the material
+					composition of our spacers to one with a lower permittivity helped reduce our leakage capacitance.
+					<br><br>
+					We also increased the doping concentration of our Source and Drain to the upper limit to increase
+					the number of carriers in our channel, and by extension our current. Finally, we decreased our
+					operating voltage to 1.75 V to meet spec.
+					Microprocessor performance was modeled in Sentaurus and calculations for gate capacitance were
+					completed in MATLAB. For more detail on the analysis, see the paper below.
+					<br><br>
+					<iframe src="PDFs/6_012_Design_Project.pdf" width="100%" height="500px">
+					</iframe>
+				</p>
+				<p> <b>Applied Skills:</b> MATLAB, Sentaurus TCAD
+				</p>
 
 
-									<!-- 2.008 Begins Here-->
-									<h3 class="major" id = "s2.008">2.008 : Design and Manufacturing II (Spring 2021) </h3>
-									<p><b>Objective:</b><br>
-										As a student in 2.008 (Design and Manufacturing II), I worked in a team of 4 other undergraduate students to design and manufacture 50 plastic yo-yos over the course of the semester.<br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-4"></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.008/Picture13.png" alt="" /></span></div>
-												<div class="col-4"></div>
-											</div>
-										</div>
-										<!--<p><span class="image center"><img src="images/2.008/Picture13.png" alt="" /></span>-->
-										<b>Solution:</b><br>
-										Taking inspiration from the CITGO Sign in Boston, my team designed the yo-yos pictured below.<br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="images/2.008/citgo sign.jpg" alt="" /></span></div>
-												<div class="col-6"><span class="image fit"><img src="images/2.008/Picture14.png" alt="" /></span></div>
-											</div>
-										</div>
-										The yo-yo was composed of 6 main components, the injection molded yo-yo body, red transparent pyramid, PCB, blue thermoformed letters, white cover and outer press-fit rim. The internal PCB housed a button, battery and LED and served to illuminate the transparent pyramid from behind. The transparent pyramid also served as a button, switching the LED on and off as desired.<br> 
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-3"></div>
-												<div class="col-6"><span class="image fit"><img src="images/2.008/Picture11.png" alt="" /></span></div>
-												<div class="col-3"></div>
-												<!--<div class="col-3-2"><span class="image fit"><img src="images/2.008/Picture12.png" alt="" /></span></div>-->
-											</div>
-										</div>
-										<!--
+				<!-- 2.12 Begins Here-->
+				<h3 class="major" id="s2.12">2.12: Introduction to Robotics (Spring 2021) </h3>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/2.12/Picture37.jpg" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/2.12/Picture35.png" alt="" /></span>
+						</div>
+						<div class="col-4"><span class="image fit"><img src="images/2.12/Picture36.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+				<p>Tuned a PID Controller and used arm kinematics to control the motion of robot arm, and draw desired
+					shapes.
+					Used ROS, Computer Vision/ Image Processing to control UR5e robot arm.
+					Correctly identified colored bottles and transported them onto a basket with the UR5e arm for term
+					project.
+					Term Project attempted to mimic the control of telepresence robots in hospitals.
+					<br><br>
+					<b>Applied Skills:</b> ROS, OpenCV, Python (Programming) <br>
+				</p>
+
+
+				<!-- 2.008 Begins Here-->
+				<h3 class="major" id="s2.008">2.008 : Design and Manufacturing II (Spring 2021) </h3>
+				<p><b>Objective:</b><br>
+					As a student in 2.008 (Design and Manufacturing II), I worked in a team of 4 other undergraduate
+					students to design and manufacture 50 plastic yo-yos over the course of the semester.<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.008/Picture13.png"
+									alt="" /></span></div>
+						<div class="col-4"></div>
+					</div>
+				</div>
+				<!--<p><span class="image center"><img src="images/2.008/Picture13.png" alt="" /></span>-->
+				<b>Solution:</b><br>
+				Taking inspiration from the CITGO Sign in Boston, my team designed the yo-yos pictured below.<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/2.008/citgo sign.jpg"
+									alt="" /></span></div>
+						<div class="col-6"><span class="image fit"><img src="images/2.008/Picture14.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+				The yo-yo was composed of 6 main components, the injection molded yo-yo body, red transparent pyramid,
+				PCB, blue thermoformed letters, white cover and outer press-fit rim. The internal PCB housed a button,
+				battery and LED and served to illuminate the transparent pyramid from behind. The transparent pyramid
+				also served as a button, switching the LED on and off as desired.<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/2.008/Picture11.png"
+									alt="" /></span></div>
+						<div class="col-3"></div>
+						<!--<div class="col-3-2"><span class="image fit"><img src="images/2.008/Picture12.png" alt="" /></span></div>-->
+					</div>
+				</div>
+				<!--
 										<p><span class="image right"><img src="images/2.008/Picture11.png" alt="" /></span>
 										<p><span class="image right"><img src="images/2.008/Picture12.png" alt="" /></span>-->
-										<span class="image right"><img src="images/2.008/Picture12.png" alt="" /></span>
-										While working on this team, I was tasked with the design of yo-yo body which housed all the electronics and other components. Creating the body posed multiple design challenges, particularly sizing its depth appropriately while accounting for button travel height, and injection molding defects.
-										Additionally, ensuring that rim would press-fit with the body while accounting for injection molding defects like shrinkage required the use of multiple runs to assess inconsistencies in our manufacturing process.
-										<br><br>
-										I designed the aluminum molds for these parts in Autodesk Fusion and manufactured the tooling on the HAAS CNC. I also helped thermoform the letters and punched out the desired features using a die.
-										The majority of the manufacturing took place at MIT’s LMP (Laboratory for Manufacturing and Productivity).
-										<br><br>
-										<b>Applied Skills:</b> Design and Manufacturing, Computer Aided Design, Fabrication and Machining, Autodesk Fusion <br></p>
-									
-									<!-- 2.086 Begins Here-->
-									<h3 class="major" id = "s2.086">2.086: Numerical Computation for Mechanical Engineers (Spring 2020) </h3>
-									<p><b>Objective:</b><br>
-										While taking MIT’s 2.086: Numerical Computation for Mechanical Engineers, students focus on numerical methods, linear and differential equations and develop familiarity with MATLAB programming. At the end of the semester, students are asked to use MATLAB to solve a physical problem in the real world. 
-										<br><br>
-										<b>Solution:</b><br>
-										For our term project, I worked in a group of three to develop MATLAB code that would mimic the functionality of an Etch A Sketch, a common children’s drawing device that uses two rotating knobs to draw on a screen. Ideally, the goal of the project was to generate a script that would take in an input image file and output functional G-code that could be used to drive the Etch A Sketch knobs.
- 										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="image fit"><img src="images/2.086/Picture28.png" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/2.086/Picture26.png" alt="" /></span></div>
-												<div class="col-3"><span class="image fit"><img src="images/2.086/Picture27.png" alt="" /></span></div>
-												<!--<div class="col-3-2"><span class="image fit"><img src="images/2.008/Picture12.png" alt="" /></span></div>-->
-											</div>
-										</div>
-										My responsibilities included the design of an algorithm to segment images into a sequence of connected lines, that minimized the computation, while preserving the essence of the image. MATLAB’s built-in edge detection was used to divide the image into line segments, since features like shading and line thickness would drastically increase the program’s runtime. By drawing exclusively edges we can preserve the content of the image and get a decent representation of its features.
-										<br><br>
-										However, since an Etch A Sketch’s pen never leaves the page, a method for connecting the segments into one continuous line was needed. The algorithm optimized the path by first checking for nearest neighbors, and then opting to minimize the length of additional line segments needed to connect the image. My group then converted the subsequent array of line endpoints, into usable G-code that would actuate stepper motors attached to the Etch A Sketch’s knobs. 
-										<br><br>
-										<b>Applied Skills:</b> MATLAB <br>
-										</p>
-									
-									<!-- 2.671 Begins Here-->
-									<h3 class="major" id = "s2.671">2.671: Measurement and Instrumentation (Fall 2020) </h3>
-									<p><b>Objective:</b><br>
-										In MIT’s 2.671 Measurement and Instrumentation course, students the semester exploring measurement methods and experimental techniques typically encountered by mechanical engineers. Concurrently, students are asked to take measurements and write a formal research paper on a topic of their choice. The semester ends with a formal poster session in which students are asked to share their work with other students and faculty.
-										<br><br>
-										<b>Solution:</b><br>
-										As I was taking the course during COVID, the scope of my project was limited to what I had readily available at home. Combining my love with basketball and engineering, I decided to explore the relationship between arm angle and jump force on basketball shot distance. Changes in arm angle were measured using a Vernier Goniometer, and two force plates under the players feet were used to assess applied jumping force. Ultimately, it was found that there was a positive linear correlation between arm angular velocity and distance from the basket. Jumping Force also generally increased as distance from the basket increased. Missed shots could be identified only through changes in angular velocity. Additional investigation is still required on the impact of lateral changes in arm angle, player shot mechanics, and shot distances exceeding six meters. 
-										<br><br>
-										<b>Applied Skills:</b> Measurement and Instrumentation, Data Analysis, MATLAB
-									</p>
-									<iframe src="PDFs/2_671_Final_Paper.pdf" width="100%" height="500px"></iframe>
-									<ul class="actions fit">
-										<li><a href="PDFs/2.671 Final Poster.pdf" class="button primary fit">Class Poster:</a></li>
-										<li><a href="PDFs/Sports Summit 2021 David Ologan Poster.pdf" class="button fit">Sports Summit Poster:</a></li>
-									</ul>
-									
-									<!-- 2.007 Begins Here-->
-									<h3 class="major" id = "s2.007">2.007: Design and Manufacturing I (Spring 2020) </h3>
-									<p><b>Objective:</b><br>
-										While taking 2.007 Design and Manufacturing I, students are tasked with the design and fabrication of a robot with the goal of completing a variety of tasks on a themed gameboard. In 2020, the game board took inspiration from Pachinko arcades, and focused on tasks such as collecting balls into the particular areas on the board, placing a square peg, among other things. At the end of the semester, students compete in an effort to gather as many points as possible in the allocated amount of time. 
-										<br><br>
-										<b>Solution:</b><br>
-										Over the course of the semester, I designed a robot to perform a number of lifting tasks and meet design requirements of competition. My main lifting mechanism was composed of a multi-stage telescoping lift, tailored for lifting a 2.55 kg weighted beaver to a maximum height of 92 cm off the ground. The lift was actuated by a pulley system attached to a gear reduced winch at the rear of the robot. The robot operates at the allowed 7.4 V and was loosely modeled after construction site forklifts.
-										
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/2.007/Picture38.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.007/Picture39.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.007/Picture40.2.png" alt="" /></span></div>
-											</div>
-										</div>
-										
-										Additionally, at the start of the semester, I built a separate robot, aimed at pushing colored balls into the desired game area. I used this robot to rapidly prototype different plow designs, taking inspiration from skid-steer loaders. Ultimately, I settled on the current design that yielded the best performance.
-										<br>
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/2.007/IMG_7844.MOV" type="video/mp4"></video></span></div>
-												<div class="col-6"><span class="vid fit"><video width="640" height="480" controls><source src="images/2.007/IMG_7885.MOV" type="video/mp4"></video></span></div>
-											</div>
-										</div>
-										
-										Unfortunately, the semester was cut short due to COVID, and I wasn’t able to complete the construction of my design or compete in the competition. Instead, I decided to refine my CAD assembly and dive deeper into mechanical analysis of my robot. My analysis centered primarily on weight distribution to prevent tipping and allow for the traversal of ramps and other course obstacles. Power analysis, required motor torque and motor tension, and winch diameter sizing were also a focus of my analysis.
-										<br><br>
-										<b>Applied Skills:</b> Mechanical Design and Analysis, Manufacturing, Power Analysis
-									</p>
-									
-									<!-- 2.670 Begins Here-->
-									<h3 class="major" id = "s2.670">2.670: Mechanical Engineering Tools (Summer 2019) </h3>
-									<p><b>Objective:</b><br>
-										During my freshman summer, I took 2.670, MIT’s Mechanical Engineering Tools class. While there, I developed the skills necessary to safely operate a variety of machine tools like the bandsaw, manual mill and lathe. 
-										<br><br>
-										<b>Solution:</b><br>
-										Over the course of three days, I constructed a fully functioning flashlight composed of two parts. The threaded handle, that housed the batteries was machined on the lathe, while the head of the flashlight which housed the bulb was pocketed on the mill. 
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/2.670/Picture1.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.670/Picture2.1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/2.670/Picture3.png" alt="" /></span></div>
-											</div>
-										</div>
-										<b>Applied Skills:</b> Manufacturing, Fabrication
-									</p>
-									
-									<!-- 2.00b Begins Here-->
-									<h3 class="major" id = "s2.00b">2.00b : Toy Product Design (Spring 2019) </h3>
-									<p><b>Objective:</b><br>
-										As a student in 2.00b, MIT’s Toy Product Design course, students work in teams of 5 to produce a toy marketed for play and entertainment. With a focus on prototyping, aesthetic design, and safety, students present a novel product targeted towards young children at the end of the semester.
-										<br><br><span class="image left"><img src="images/2.00b/Picture23.png" alt="" /></span>
-										<b>Solution:</b><br>
-										
-										My team (Llama Team) designed and fabricated Asteroid Evader, a board game that takes inspiration from Cartoon Network’s Hole in the Wall. Players are tasked with recreating shapes shown on the removable slides out of Play-Doh before the timer runs out. At the end of each round, players retract the slider to see if their molded shape makes the cut.
-										<br><br><span class="image right"><img src="images/2.00b/Picture21.png" alt="" /></span>
-										The game consists of over 20 unique shapes, cut out of ¼” acrylic sheets, an ABS 3-D printed slider, and milled plastic game board. The timer was housed in foam sprayed with acetone to mimic the surface features of an asteroid.
-										<br><br>
-										Our product was tested with children in our target age group at the Children’s Museum of Action in Boston. Some of my personal responsibilities included the electronics (designed circuit and housing for the timer), and the creation of unique geometries for the removable slides.
-										<br><br>
-										<b>Applied Skills:</b> SolidWorks, Manufacturing, Simple Circuit Design
-										</p>
-									<p><a href="http://web.mit.edu/2.00b/toy_museum/2019/index.html" class="special">See our Final Presentation Here:</a></p>
-									<br>
-								</div>
-							</div>
-					</section>
+				<span class="image right"><img src="images/2.008/Picture12.png" alt="" /></span>
+				While working on this team, I was tasked with the design of yo-yo body which housed all the electronics
+				and other components. Creating the body posed multiple design challenges, particularly sizing its depth
+				appropriately while accounting for button travel height, and injection molding defects.
+				Additionally, ensuring that rim would press-fit with the body while accounting for injection molding
+				defects like shrinkage required the use of multiple runs to assess inconsistencies in our manufacturing
+				process.
+				<br><br>
+				I designed the aluminum molds for these parts in Autodesk Fusion and manufactured the tooling on the
+				HAAS CNC. I also helped thermoform the letters and punched out the desired features using a die.
+				The majority of the manufacturing took place at MIT’s LMP (Laboratory for Manufacturing and
+				Productivity).
+				<br><br>
+				<b>Applied Skills:</b> Design and Manufacturing, Computer Aided Design, Fabrication and Machining,
+				Autodesk Fusion <br></p>
 
-				<!-- Footer -->
-				<section id="footer">
-					<div class="inner">
-						<h2 class="major">Contact</h2>
-						<p>If you have any questions, please feel free to contact me at:</p>
-						<ul class="contact">
-							<!--<li class="icon solid fa-phone"><a href="#">(917) 635-2734 </a> </li>-->
-							<li class="icon solid fa-envelope"><a href="#">ologandavid@gmail.com </a></li>
-							<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/dologan"> www.linkedin.com/in/dologan </a></li>
-							<li class="icon brands fa-github"><a href="https://github.com/ologandavid"> www.github.com/ologandavid </a></li>
-						</ul>
-						<ul class="copyright">
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+				<!-- 2.086 Begins Here-->
+				<h3 class="major" id="s2.086">2.086: Numerical Computation for Mechanical Engineers (Spring 2020) </h3>
+				<p><b>Objective:</b><br>
+					While taking MIT’s 2.086: Numerical Computation for Mechanical Engineers, students focus on
+					numerical methods, linear and differential equations and develop familiarity with MATLAB
+					programming. At the end of the semester, students are asked to use MATLAB to solve a physical
+					problem in the real world.
+					<br><br>
+					<b>Solution:</b><br>
+					For our term project, I worked in a group of three to develop MATLAB code that would mimic the
+					functionality of an Etch A Sketch, a common children’s drawing device that uses two rotating knobs
+					to draw on a screen. Ideally, the goal of the project was to generate a script that would take in an
+					input image file and output functional G-code that could be used to drive the Etch A Sketch knobs.
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="image fit"><img src="images/2.086/Picture28.png"
+									alt="" /></span></div>
+						<div class="col-3"><span class="image fit"><img src="images/2.086/Picture26.png"
+									alt="" /></span></div>
+						<div class="col-3"><span class="image fit"><img src="images/2.086/Picture27.png"
+									alt="" /></span></div>
+						<!--<div class="col-3-2"><span class="image fit"><img src="images/2.008/Picture12.png" alt="" /></span></div>-->
 					</div>
-				</section>
+				</div>
+				My responsibilities included the design of an algorithm to segment images into a sequence of connected
+				lines, that minimized the computation, while preserving the essence of the image. MATLAB’s built-in edge
+				detection was used to divide the image into line segments, since features like shading and line
+				thickness would drastically increase the program’s runtime. By drawing exclusively edges we can preserve
+				the content of the image and get a decent representation of its features.
+				<br><br>
+				However, since an Etch A Sketch’s pen never leaves the page, a method for connecting the segments into
+				one continuous line was needed. The algorithm optimized the path by first checking for nearest
+				neighbors, and then opting to minimize the length of additional line segments needed to connect the
+				image. My group then converted the subsequent array of line endpoints, into usable G-code that would
+				actuate stepper motors attached to the Etch A Sketch’s knobs.
+				<br><br>
+				<b>Applied Skills:</b> MATLAB <br>
+				</p>
+
+				<!-- 2.671 Begins Here-->
+				<h3 class="major" id="s2.671">2.671: Measurement and Instrumentation (Fall 2020) </h3>
+				<p><b>Objective:</b><br>
+					In MIT’s 2.671 Measurement and Instrumentation course, students the semester exploring measurement
+					methods and experimental techniques typically encountered by mechanical engineers. Concurrently,
+					students are asked to take measurements and write a formal research paper on a topic of their
+					choice. The semester ends with a formal poster session in which students are asked to share their
+					work with other students and faculty.
+					<br><br>
+					<b>Solution:</b><br>
+					As I was taking the course during COVID, the scope of my project was limited to what I had readily
+					available at home. Combining my love with basketball and engineering, I decided to explore the
+					relationship between arm angle and jump force on basketball shot distance. Changes in arm angle were
+					measured using a Vernier Goniometer, and two force plates under the players feet were used to assess
+					applied jumping force. Ultimately, it was found that there was a positive linear correlation between
+					arm angular velocity and distance from the basket. Jumping Force also generally increased as
+					distance from the basket increased. Missed shots could be identified only through changes in angular
+					velocity. Additional investigation is still required on the impact of lateral changes in arm angle,
+					player shot mechanics, and shot distances exceeding six meters.
+					<br><br>
+					<b>Applied Skills:</b> Measurement and Instrumentation, Data Analysis, MATLAB
+				</p>
+				<iframe src="PDFs/2_671_Final_Paper.pdf" width="100%" height="500px"></iframe>
+				<ul class="actions fit">
+					<li><a href="PDFs/2.671 Final Poster.pdf" class="button primary fit">Class Poster:</a></li>
+					<li><a href="PDFs/Sports Summit 2021 David Ologan Poster.pdf" class="button fit">Sports Summit
+							Poster:</a></li>
+				</ul>
+
+				<!-- 2.007 Begins Here-->
+				<h3 class="major" id="s2.007">2.007: Design and Manufacturing I (Spring 2020) </h3>
+				<p><b>Objective:</b><br>
+					While taking 2.007 Design and Manufacturing I, students are tasked with the design and fabrication
+					of a robot with the goal of completing a variety of tasks on a themed gameboard. In 2020, the game
+					board took inspiration from Pachinko arcades, and focused on tasks such as collecting balls into the
+					particular areas on the board, placing a square peg, among other things. At the end of the semester,
+					students compete in an effort to gather as many points as possible in the allocated amount of time.
+					<br><br>
+					<b>Solution:</b><br>
+					Over the course of the semester, I designed a robot to perform a number of lifting tasks and meet
+					design requirements of competition. My main lifting mechanism was composed of a multi-stage
+					telescoping lift, tailored for lifting a 2.55 kg weighted beaver to a maximum height of 92 cm off
+					the ground. The lift was actuated by a pulley system attached to a gear reduced winch at the rear of
+					the robot. The robot operates at the allowed 7.4 V and was loosely modeled after construction site
+					forklifts.
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/2.007/Picture38.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.007/Picture39.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.007/Picture40.2.png"
+									alt="" /></span></div>
+					</div>
+				</div>
+
+				Additionally, at the start of the semester, I built a separate robot, aimed at pushing colored balls
+				into the desired game area. I used this robot to rapidly prototype different plow designs, taking
+				inspiration from skid-steer loaders. Ultimately, I settled on the current design that yielded the best
+				performance.
+				<br>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/2.007/IMG_7844.MOV" type="video/mp4">
+								</video></span></div>
+						<div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
+									<source src="images/2.007/IMG_7885.MOV" type="video/mp4">
+								</video></span></div>
+					</div>
+				</div>
+
+				Unfortunately, the semester was cut short due to COVID, and I wasn’t able to complete the construction
+				of my design or compete in the competition. Instead, I decided to refine my CAD assembly and dive deeper
+				into mechanical analysis of my robot. My analysis centered primarily on weight distribution to prevent
+				tipping and allow for the traversal of ramps and other course obstacles. Power analysis, required motor
+				torque and motor tension, and winch diameter sizing were also a focus of my analysis.
+				<br><br>
+				<b>Applied Skills:</b> Mechanical Design and Analysis, Manufacturing, Power Analysis
+				</p>
+
+				<!-- 2.670 Begins Here-->
+				<h3 class="major" id="s2.670">2.670: Mechanical Engineering Tools (Summer 2019) </h3>
+				<p><b>Objective:</b><br>
+					During my freshman summer, I took 2.670, MIT’s Mechanical Engineering Tools class. While there, I
+					developed the skills necessary to safely operate a variety of machine tools like the bandsaw, manual
+					mill and lathe.
+					<br><br>
+					<b>Solution:</b><br>
+					Over the course of three days, I constructed a fully functioning flashlight composed of two parts.
+					The threaded handle, that housed the batteries was machined on the lathe, while the head of the
+					flashlight which housed the bulb was pocketed on the mill.
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="images/2.670/Picture1.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.670/Picture2.1.png"
+									alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="images/2.670/Picture3.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+				<b>Applied Skills:</b> Manufacturing, Fabrication
+				</p>
+
+				<!-- 2.00b Begins Here-->
+				<h3 class="major" id="s2.00b">2.00b : Toy Product Design (Spring 2019) </h3>
+				<p><b>Objective:</b><br>
+					As a student in 2.00b, MIT’s Toy Product Design course, students work in teams of 5 to produce a toy
+					marketed for play and entertainment. With a focus on prototyping, aesthetic design, and safety,
+					students present a novel product targeted towards young children at the end of the semester.
+					<br><br><span class="image left"><img src="images/2.00b/Picture23.png" alt="" /></span>
+					<b>Solution:</b><br>
+
+					My team (Llama Team) designed and fabricated Asteroid Evader, a board game that takes inspiration
+					from Cartoon Network’s Hole in the Wall. Players are tasked with recreating shapes shown on the
+					removable slides out of Play-Doh before the timer runs out. At the end of each round, players
+					retract the slider to see if their molded shape makes the cut.
+					<br><br><span class="image right"><img src="images/2.00b/Picture21.png" alt="" /></span>
+					The game consists of over 20 unique shapes, cut out of ¼” acrylic sheets, an ABS 3-D printed slider,
+					and milled plastic game board. The timer was housed in foam sprayed with acetone to mimic the
+					surface features of an asteroid.
+					<br><br>
+					Our product was tested with children in our target age group at the Children’s Museum of Action in
+					Boston. Some of my personal responsibilities included the electronics (designed circuit and housing
+					for the timer), and the creation of unique geometries for the removable slides.
+					<br><br>
+					<b>Applied Skills:</b> SolidWorks, Manufacturing, Simple Circuit Design
+				</p>
+				<p><a href="http://web.mit.edu/2.00b/toy_museum/2019/index.html" class="special">See our Final
+						Presentation Here:</a></p>
+				<br>
+			</div>
 		</div>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<section id="footer">
+		<div class="inner">
+			<h2 class="major">Contact</h2>
+			<p>If you have any questions, please feel free to contact me at:</p>
+			<ul class="contact">
+				<!--<li class="icon solid fa-phone"><a href="#">(917) 635-2734 </a> </li>-->
+				<li class="icon solid fa-envelope"><a href="#">ologandavid@gmail.com </a></li>
+				<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/dologan">
+						www.linkedin.com/in/dologan </a></li>
+				<li class="icon brands fa-github"><a href="https://github.com/ologandavid"> www.github.com/ologandavid
+					</a></li>
+			</ul>
+			<ul class="copyright">
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</section>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
