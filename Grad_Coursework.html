@@ -249,7 +249,7 @@
 				</ol>
 				To optimize the performance of the PID controller, I tuned the associated proportional, derivative,
 				and integral gains. For the static LQR controller, I discretized the continuous error dynamics of
-				the nonlinear system using a Zero Order Hold, and then designed an infinite horizon LQR controller
+				the nonlinear system using a zero order hold, and then designed an infinite horizon LQR controller
 				for the system. Similarly, to implement the MPC, I implemented an iterative finite horizon LQR for a
 				tunable horizon size N in the future. Ultimately, the controller was able to get the buggy to
 				accelerate on the straight portions of the track, while slowing accordingly for turns.<br>
