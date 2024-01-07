@@ -57,6 +57,27 @@
 			<div class="inner">
 				<!-- 16.782 Begins Here-->
 				<h3 class="major" id="s16.782"> 16.782 : Planning and Decision Making in Robotics (Fall 2023)</h3>
+				<p><b>Objective:</b><br>
+					As a student in 16.782, my team and I decided to tackle the challenge of motion planning for
+					multiple robotic agents in complex environments. Especially as robotics continues to expand into
+					areas like search and rescue, exploration, and warehousing, the desire for autonomous robots capable
+					of performing collision free coordinated tasks has noticeably escalated. Given my current research
+					in quadruped robots and the unique mobility the platform provides, I decided it would be interesting
+					to employ a variety of multi-agent planning strategies to see which performed best.
+					<br><br>
+					<b>Solution:</b><br>
+					To implement each planner, we leveraged Quad-SDK, my lab’s ROS-based framework for quadrupedal
+					locomotion. By incorporating its suite of visualization tools, local footstep planner, and low-level
+					motor controller, we were able to seamlessly integrate and test our planner performance on a variety
+					of terrain. For each sampling-based planner, the representation of discrete time robot states is
+					defined as a vector of robot body position, orientation and velocity. For the body of the project,
+					my team and I explored three main motion planning algorithms.
+				<ol>
+					<li>Sequential RRT-Connect (Rapidly Exploring Random Trees) </li>
+					<li>Joint Space RRT-Connect</li>
+					<li>Conflict Based Search</li>
+				</ol>
+
 				<div class="box alt">
 					<div class="row gtr-uniform">
 						<div class="col-6"><span class="image fit"><img src="images/16.782/head2head.png"
@@ -67,15 +88,66 @@
 								</video></span></div>
 					</div>
 				</div>
-				<p>This paper explores multi-robot motion planning strategies for quadruped robots. Here, we present
-					three distinct methods: a sequential RRT-Connect (Rapidly Exploring Random Tree Planner), a joint
-					state-space RRT-Connect Planner, and a Conflict Based Search. Our study showcases the success of
-					each approach by generating kino-dynamically feasible and collision-free body trajectories for
-					multiple legged robots navigating diverse terrain. Leveraging Quad-SDK, a open-source ROS-based
-					framework designed for quadruped locomotion, we incorporate its footstep planner and low-level motor
-					controller to implement these strategies. Applying all three global planner techniques proved
-					successful in most scenarios with the conflict based planner approach having the lowest cost to
-					goal. The sequential RRT had the quickest solve time due to its more simplistic approach.
+				The Sequential RRT-Connect operates by successively solving a path for each robot. By treating all prior
+				paths as static obstacles and independently planning for each robot, we reduce the computational
+				complexity of the process, improving speed, but at the sacrifice probabilistic completeness.
+				The Joint Space RRT-Connect considers all robots simultaneously and solves for a trajectory in the joint
+				state space of all robots. This approach is more comprehensive, and maintains completeness but scales
+				poorly do to the increased state complexity.
+				Finally, the CBS acts as the middle ground, planning for each robot individually using a low level
+				RRT-Connect, while identifying and resolving path conflicts as they appear in its high-level search.
+				This method aims to combine the best of both worlds, taking advantage of the individuality of the
+				sequential RRT, and only solving the joint space problem when necessary.
+				Throughout the project, my main responsibilities included implementing and testing the conflict-based
+				search, as well as onboarding my teammates on the codebase and debugging any errors they might
+				encounter.<br><br>
+
+				<b>Results:</b><br>
+				We demonstrated the success of each method using simulation tests conducted in Gazebo and Rviz. For
+				validity, the number of agents was set to two, but later extended to four to see how each method scales.
+				In each scenario, we show that the planner can compute kino-dynamically feasible, collision free body
+				trajectories for multiple robots over a number of randomly generated trial environments. The results are
+				shown in the table below.
+				<br><br>
+				<table class="alt">
+					<thead>
+						<tr>
+							<th>Planner</th>
+							<th>Average Path Length (m)</th>
+							<th>Average Planning Time (s)</th>
+							<th>Success Rate</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sequential</td>
+							<td>18.2</td>
+							<td>0.094</td>
+							<td>69%</td>
+						</tr>
+						<tr>
+							<td>Joint</td>
+							<td>16.9</td>
+							<td>1.067</td>
+							<td>81%</td>
+						</tr>
+						<tr>
+							<td>Conflict Based Search</td>
+							<td>15.1</td>
+							<td>0.254</td>
+							<td>100%</td>
+						</tr>
+					</tbody>
+				</table>
+				Ultimately, as expected the sequential planner was the quickest, but often output suboptimal paths, and
+				would often fail when subsequent robots became over constrained. The joint planner performed better, and
+				allowed for crossing paths, but this often resulted in longer solve times. On average, the CBS performed
+				best, with a shorter average path length and a decent average planning time.<br><br>
+				The results demonstrate the importance of application specific planners, particularly for
+				implementations where tradeoffs can be made on speed, computational complexity, completeness, and
+				efficiency. CBS remains the most versatile approach, but the overall project highlights the continued
+				need for scalable solutions to real world multi-agent motion planning.
+				</p>
 				<p><b>Applied Skills: C++, ROS, Gazebo, RRT, Conflict Based Search, Multi-Robot Motion Planning</b>
 				</p>
 				<ul class="actions fit">
@@ -90,7 +162,8 @@
 				<h3 class="major" id="s16.745"> 16.745 : Optimal Control and Reinforcement Learning (Spring 2023)</h3>
 				<div class="box alt">
 					<div class="row gtr-uniform">
-						<div class="col-6"><span class="image fit"><img src="images/16.745/tmp.gif" alt="" /></span>
+						<div class="col-6"><span class="image fit"><img src="images/16.745/Bar-Separation-Test-2.gif"
+									alt="" /></span>
 						</div>
 						<div class="col-6"><span class="vid fit"><video controls>
 									<source src="images/16.745/meshcat1.mp4" type="video/mp4">
@@ -108,7 +181,8 @@
 					In addition, we show the importance of a free time setup on the cost function in producing
 					consistent feasible trajectories using
 					this DIRCOL technique.
-				<p><b>Applied Skills: Julia, MeshCat, DIRCOL, Hybrid Systems, Lagrangian Dynamics, iPOPT Trajectory Optimization</b>
+				<p><b>Applied Skills: Julia, MeshCat, DIRCOL, Hybrid Systems, Lagrangian Dynamics, iPOPT Trajectory
+						Optimization</b>
 				</p>
 				<ul class="actions fit">
 					<li><a href="https://github.com/ologandavid/MonkeyBarBot" class="button primary fit">Github:</a>
@@ -155,9 +229,11 @@
 				<h3 class="major" id="s24.678"> 24.678 : Computer Vision for Engineers (Fall 2022)</h3>
 				<p><b>Objective:</b><br>
 					While taking CMU’s 24.678, my team and I decided to apply traditional computer vision techniques to
-					tackle the growing incidence rates of fatal injuries on construction sites nationwide. As the number of
+					tackle the growing incidence rates of fatal injuries on construction sites nationwide. As the number
+					of
 					such injuries has risen by nearly 90% in the last three years, my team devised a method to improve
-					worker awareness and safety on jobsites, maximizing company profits and reducing worker downtime.<br><br>
+					worker awareness and safety on jobsites, maximizing company profits and reducing worker
+					downtime.<br><br>
 					<b>Solution:</b><br>
 					My team developed a system that combines image processing and point cloud-based computer vision
 					methods to track the movement of workers around construction sites and notify them when they enter
@@ -169,42 +245,43 @@
 					worksite, we need a reliable way to make worker positions in the image to worker positions in space.
 					To do this, we operate under the assumption that the camera position is fixed, and all workers are
 					on the same plane (the ground). This allows us to generate a static transformation that maps pixel
-					values to world coordinate values (assuming the worksite shape and dimensions are known). This allows
+					values to world coordinate values (assuming the worksite shape and dimensions are known). This
+					allows
 					us to account for the unique perspective of our camera and generate the respective transformation
 					matrix.
-					<div class="box alt">
-						<div class="row gtr-uniform">
-							<div class="col-3"></div>
-							<div class="col-6"><span class="image fit"><img src="images/24.678/network.png"
-										alt="" /></span></div>
-							<div class="col-3"></div>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/24.678/network.png" alt="" /></span>
 						</div>
+						<div class="col-3"></div>
 					</div>
-					Subsequently, we segment our video stream into individual frames that our YOLOv7 network can
-					process. Transfer learning was done to refine the performance of the network on our construction
-					site dataset. Using YOLO for object detection, we can identify workers in each image, and output a
-					corresponding object bounding box. Given the pixel values for the center of the bounding box, we can
-					extract the workers position by average the bottom of the box.
-					<div class="box alt">
-						<div class="row gtr-uniform">
-							<div class="col-3"></div>
-							<div class="col-6"><span class="image fit"><img src="images/24.678/Picture2.png"
-										alt="" /></span></div>
-							<div class="col-3"></div>
-						</div>
+				</div>
+				Subsequently, we segment our video stream into individual frames that our YOLOv7 network can
+				process. Transfer learning was done to refine the performance of the network on our construction
+				site dataset. Using YOLO for object detection, we can identify workers in each image, and output a
+				corresponding object bounding box. Given the pixel values for the center of the bounding box, we can
+				extract the workers position by average the bottom of the box.
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-3"></div>
+						<div class="col-6"><span class="image fit"><img src="images/24.678/Picture2.png"
+									alt="" /></span></div>
+						<div class="col-3"></div>
 					</div>
-					Using our predefined transformation matrix, we can map video coordinates to world coordinates, and
-					generate a map of worker positions for each frame. These coordinates are also scaled by the size our
-					output frame and boundary. Each frame is then stitched together to create an animation that
-					describes worker position progression over time. For our simulation, we predefine danger areas,
-					although a network can be trained to identify risky or potentially dangerous objects.<br> <br>
+				</div>
+				Using our predefined transformation matrix, we can map video coordinates to world coordinates, and
+				generate a map of worker positions for each frame. These coordinates are also scaled by the size our
+				output frame and boundary. Each frame is then stitched together to create an animation that
+				describes worker position progression over time. For our simulation, we predefine danger areas,
+				although a network can be trained to identify risky or potentially dangerous objects.<br> <br>
 
-					<b>Results:</b><br>
-					For a quick representation of worker position, we plotted their location from a birds-eye view, In
-					the future, we plan to generate a more comprehensive representation of worker position, perhaps
-					incorporating velocities or making predictions about future worker behavior. Extending the method to
-					work with multiple cameras and occlusions also remains future work. Ultimately, we were able to
-					successfully track the location of each worker in a variety of environments.
+				<b>Results:</b><br>
+				For a quick representation of worker position, we plotted their location from a birds-eye view, In
+				the future, we plan to generate a more comprehensive representation of worker position, perhaps
+				incorporating velocities or making predictions about future worker behavior. Extending the method to
+				work with multiple cameras and occlusions also remains future work. Ultimately, we were able to
+				successfully track the location of each worker in a variety of environments.
 
 				<div class="box alt">
 					<div class="row gtr-uniform">
