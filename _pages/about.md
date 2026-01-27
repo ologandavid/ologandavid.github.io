@@ -26,7 +26,7 @@ latest_posts:
 
 Hi! I’m currently a second-year PhD student at Carnegie Mellon University studying Mechanical Engineering. My research focuses on leveraging reinforcement learning and optimization-based control methods for autonomous locomotion in complex, contact-rich natural environments.
 
-I am currently advised by Prof. Aaron Johnson in the Robomechanics Lab, and am fortunate to be supported by the GEM PhD University Fellowship. 
+I am currently advised by <a href="https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html">Prof. Aaron Johnson</a> in the <a href="https://www.cmu.edu/me/robomechanicslab/"> Robomechanics Lab</a>, and am fortunate to be supported by the <a href="https://www.gemfellowship.org"> GEM PhD University Fellowship</a>. 
 
-I also recently recieved my MS from CMU in Mechanical Engineering, and a BS from MIT in Mechanical Engineering and Electrical Engineering and Computer Science. I expect to graduate in May of 2028, and I'm currently looking for internship positions starting in the summer of 2026. Please take a look at some of the projects I’ve been working on!
+I also recently recieved my M.S. from CMU in Mechanical Engineering, and a B.S. from MIT in Mechanical Engineering and Electrical Engineering and Computer Science. I expect to graduate in May of 2028, and I'm currently looking for internship positions starting in the summer of 2026. Please take a look at some of the projects I’ve been working on!
 
