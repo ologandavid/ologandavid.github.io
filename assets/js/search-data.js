@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Capstone Projects, Labs and Assorted Write-Ups",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -105,37 +105,17 @@ ninja.data = [{
           title: 'Hybrid Trajectory Optimization for Monkey Bar Robot Using DIRCOL',
           description: "16.745 Optimal Control and Reinforcement Learning (Spring 2023)",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_monkey_bar_robot%202/";
-            },},{id: "projects-hybrid-trajectory-optimization-for-monkey-bar-robot-using-dircol",
-          title: 'Hybrid Trajectory Optimization for Monkey Bar Robot Using DIRCOL',
-          description: "16.745 Optimal Control and Reinforcement Learning (Spring 2023)",
-          section: "Projects",handler: () => {
               window.location.href = "/projects/2_monkey_bar_robot/";
             },},{id: "projects-dense-video-captioning",
           title: 'Dense Video Captioning',
           description: "11.785 Introduction to Deep Learning (Spring 2023)",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_dense_video_captioning%20copy%202/";
-            },},{id: "projects-dense-video-captioning",
-          title: 'Dense Video Captioning',
-          description: "11.785 Introduction to Deep Learning (Spring 2023)",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_dense_video_captioning%20copy/";
+              window.location.href = "/projects/3_dense_video_captioning/";
             },},{id: "projects-construction-site-hazard-detection",
           title: 'Construction Site Hazard Detection',
           description: "24.678 Computer Vision for Engineers (Fall 2022)",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_construction_site_hazard_detection%20copy%202/";
-            },},{id: "projects-construction-site-hazard-detection",
-          title: 'Construction Site Hazard Detection',
-          description: "24.678 Computer Vision for Engineers (Fall 2022)",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_construction_site_hazard_detection%20copy/";
-            },},{id: "projects-autonomous-buggy-controls",
-          title: 'Autonomous Buggy Controls',
-          description: "24.695 Modern Control Theory (Fall 2022)",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_modern_control_theory%202/";
+              window.location.href = "/projects/4_construction_site_hazard_detection/";
             },},{id: "projects-autonomous-buggy-controls",
           title: 'Autonomous Buggy Controls',
           description: "24.695 Modern Control Theory (Fall 2022)",
