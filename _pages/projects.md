@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Capstone Projects, Labs and Assorted Write-Ups
 nav: true
 nav_order: 3
 display_categories: [Graduate, Undergraduate]

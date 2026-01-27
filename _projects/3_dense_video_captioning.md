@@ -1,40 +1,16 @@
 ---
 layout: page
-title: Construction Site Hazard Detection
-description: 24.678 Computer Vision for Engineers (Fall 2022)
-img: assets/img/24.678/sitegif2.gif
+title: Dense Video Captioning
+description: 11.785 Introduction to Deep Learning (Spring 2023)
+img: assets/img/11.785/xukungif.gif
 importance: 1
 category: Graduate
 related_publications: true
 ---
 
-Objective:
-As a student in 24.695, CMU’s Control Theory class, I was assigned the challenge of creating an efficient controller and estimator for a small self-driving vehicle. Given the projected expansion of the driverless car industry to reach 93 billion by 2028, this project is geared towards
-addressing that growth. For this project, we drew inspiration from <a href="https://www.cmu.edu/buggy/">CMU’s yearly buggy competition</a> for our track design and developed an optimal controller for the car.
+In recent years, there has been a large research focus on dense video captioning. Video captioning has applications in many fields such as autonomous driving, video surveillance and creating captions for those with visual impairments. As such, a novel approach is proposed by employing language models (LM) to help to semantically align video features in an attempt to improve the overall performance of dense video captioning. The baseline model for comparison, End-to-end dense video captioning with parallel decoding (PDVC), produced strong results compared to many state of the art video captioning frameworks. PDVC is trained on the ActivityNet and YouCook2 datasets but for this study only YouCook2 was used due to computational capacity limits. We propose the incorporation of semantic alignment through the addition of a tuner network before the video features are passed through the PDVC framework. Ablations were ran for different tuner architectures and overall, the modified PDVC framework outperformed the baseline PDVC in many evaluation metrics. Promising future extensions with Semantic alignment and Dense Video Captioning remain with its application to larger and more comprehensive data sets.
 
-Solution:
-
- <!-- <span class="image right"><img src="images/24.695/bicycle.png" alt="" /></span> -->
-To approximate the motion of the car, a simple bicycle model was used to define system dynamics. The
-car is modeled as a two wheeled vehicle with two degrees of freedom described by its longitudinal
-and lateral dynamics. As such, I designed a two-part controller that generates control commands
-including desired steering angle δ and longitudinal force f.
-Given a desired trajectory of waypoints, I implemented a:
-
-<!-- 
-<ol>
-<li>PID Controller</li>
-<li>State Feedback Controller</li>
-<li>LQR Controller</li>
-<li>MPC Controller</li>
-</ol> -->
-
-To optimize the performance of the PID controller, I tuned the associated proportional, derivative,
-and integral gains. For the static LQR controller, I discretized the continuous error dynamics of
-the nonlinear system using a zero order hold, and then designed an infinite horizon LQR controller
-for the system. Similarly, to implement the MPC, I implemented an iterative finite horizon LQR for a
-tunable horizon size N in the future. Ultimately, the controller was able to get the buggy to
-accelerate on the straight portions of the track, while slowing accordingly for turns.
+Applied Skills: PyTorch, Linux, GCP, Python, Deep Learning
 
 
 <div class="row">
