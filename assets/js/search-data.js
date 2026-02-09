@@ -87,8 +87,8 @@ ninja.data = [{
           description: "16.782 Planning and Decision Making in Robotics (Fall 2023)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_multi_robot_motion_planning/";
-            },},{id: "projects-hybrid-trajectory-optimization-for-monkey-bar-robot-using-dircol",
-          title: 'Hybrid Trajectory Optimization for Monkey Bar Robot Using DIRCOL',
+            },},{id: "projects-hybrid-trajectory-optimization-for-a-monkey-bar-robot-using-dircol",
+          title: 'Hybrid Trajectory Optimization for a Monkey Bar Robot Using DIRCOL',
           description: "16.745 Optimal Control and Reinforcement Learning (Spring 2023)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_monkey_bar_robot/";
@@ -102,8 +102,8 @@ ninja.data = [{
           description: "24.678 Computer Vision for Engineers (Fall 2022)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_construction_site_hazard_detection/";
-            },},{id: "projects-autonomous-buggy-controls",
-          title: 'Autonomous Buggy Controls',
+            },},{id: "projects-optimal-controllers-for-an-autonomous-buggy",
+          title: 'Optimal Controllers for an Autonomous Buggy',
           description: "24.695 Modern Control Theory (Fall 2022)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_modern_control_theory/";
