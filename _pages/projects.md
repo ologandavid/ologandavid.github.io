@@ -5,7 +5,7 @@ permalink: /projects/
 description: Capstone Projects, Labs and Assorted Write-Ups
 nav: true
 nav_order: 3
-display_categories: [Graduate, Undergraduate]
+display_categories: [graduate, undergraduate]
 horizontal: false
 ---
 

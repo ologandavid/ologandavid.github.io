@@ -12,13 +12,14 @@ For now, this page is assumed to be a static description of your courses. You ca
 Organize your courses by years, topics, or universities, however you like!
 
 Teaching Assistant
-24-352 Dynamics Systems and Controls
-24-670 Robot Dynamics and Controls
+24-352 Dynamics Systems and Controls (CMU)
+24-670 Robot Dynamics and Controls (CMU)
 
 Course Assistant
-24-452 Mechanical Systems Experimentation
-6.a01
+24-452 Mechanical Systems Experimentation (CMU)
+6.a01 Making with Technology, FISHBOTS (MIT)
 
 Grader
-2.086 Numerical Computation for Mechanical Engineers
-24.703 Numerical Methods in Engineering
+2.086 Numerical Computation for Mechanical Engineers (MIT) x2
+2.671 Measurement and Instrumentation (MIT)
+24.703 Numerical Methods in Engineering (CMU)

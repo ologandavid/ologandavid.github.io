@@ -1,72 +1,69 @@
 ---
 layout: page
-title: Autonomous Buggy Controls
+title: Optimal Controllers for an Autonomous Buggy
 description: 24.695 Modern Control Theory (Fall 2022)
 img: assets/img/24.695/Picture1.jpg
 importance: 1
-category: Graduate
-related_publications: true
+category: graduate
+related_publications: false
 ---
-In this paper we show a trajectory planning technique that mimics a monkey bar robot swinging from bar to bar. Using a hybrid system direct collocation (DIRCOL) trajectory optimization, we successfully demonstrate the robot swinging up from a dead hang to catch the first bar and swing to the subsequent bars. This DIRCOL technique was tested on various mass distributions in the robot as well as different bar separation distances to understand the behavior with varying parameters. In addition, we show the importance of a free time setup on the cost function in producing consistent feasible trajectories using this DIRCOL technique.
+<b>Objective:</b>
+As a student in 24.695, CMU’s Control Theory class, I was assigned the challenge of creating an
+efficient controller and estimator for a small self-driving vehicle. Given the projected expansion
+of the driverless car industry to reach 93 billion by 2028, this project is geared towards
+addressing that growth. For this project, we drew inspiration from <a href="https://www.cmu.edu/buggy/"> CMU’s yearly buggy competition</a> for our track design and developed an optimal controller for the car.
 
-Applied Skills: Julia, MeshCat, DIRCOL, Hybrid Systems, Lagrangian Dynamics, iPOPT Trajectory Optimization
+<b>Solution:</b>
+<!-- br> <span class="image right"><img src="images/24.695/bicycle.png" alt="" /></span> -->
+To approximate the motion of the car, a simple bicycle model was used to define system dynamics. The
+car is modeled as a two wheeled vehicle with two degrees of freedom described by its longitudinal
+and lateral dynamics. As such, I designed a two-part controller that generates control commands
+including desired steering angle δ and longitudinal force f.
+Given a desired trajectory of waypoints, I implemented a:
 
+<ol>
+    <li>PID Controller</li>
+    <li>State Feedback Controller</li>
+    <li>LQR Controller</li>
+    <li>MPC Controller</li>
+</ol>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+To optimize the performance of the PID controller, I tuned the associated proportional, derivative,
+and integral gains. For the static LQR controller, I discretized the continuous error dynamics of
+the nonlinear system using a zero order hold, and then designed an infinite horizon LQR controller
+for the system. Similarly, to implement the MPC, I implemented an iterative finite horizon LQR for a
+tunable horizon size N in the future. Ultimately, the controller was able to get the buggy to
+accelerate on the straight portions of the track, while slowing accordingly for turns.
+<!-- <div class="box alt">
+    <div class="row gtr-uniform">
+        <div class="col-5"><span class="image fit"><img src="images/24.695/track.png" alt="" /></span>
+        </div>
+        <div class="col-6"><span class="vid fit"><video controls>
+                    <source src="images/24.695/1080.mp4" type="video/mp4">
+                </video></span></div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+</div> -->
+In the event that localization information is missing from GPS, autonomous cars often use CV/LIDAR
+based methods for obstacle avoidance. In an effort to incorporate this into our model, I implemented
+EKF SLAM, a sensor fusion method used to augment our position estimate with local measurements.
+
+Taking advantage range and bearing measurements to the next waypoint, the buggy was able to maintain
+a stable estimate of position and heading over the entire track.
+
+<b>Results:</b>
+To assess the performance of our simulation, we tested the model on a track modeled after CMU’s
+buggy course. Driving simulations were then performed using Webots software. The model was able to
+complete the track in under 120 seconds and had an average deviation of less than 3 meters from the
+optimal tracked path.
+<!-- <div class="box alt">
+    <div class="row gtr-uniform">
+        <div class="col-6"><span class="image fit"><img src="images/24.695/LQR_Figure_1.png"
+                    alt="" /></span></div>
+        <div class="col-5"><span class="image fit"><img src="images/24.695/Figure_1.png"
+                    alt="" /></span></div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+</div> -->
+This performance was substantially better than the real-world buggy raced every year at CMU. By the
+end of the course, each controller design was able to clear desired performance evaluations.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+<b>Applied Skills:</b> Python, Webots, Extended Kalman Filter SLAM, MPC, LQR, State Feedback, PID
