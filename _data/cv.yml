@@ -2,31 +2,36 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: David Ologan
+    - email: Email
+      value: dologan@andrew.cmu.edu
+    - languages: Languages
+      value: English, Cantonese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy
+      institution: Carnegie Mellon University
+      year: 2028
       description:
-        - Description 1.
-        - Description 2.
+        - Mechanical Engineering (Robotics)
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: Master of Science - Research
+      institution: Carnegie Mellon University
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Mechanical Engineering (Robotics)
+        - Thesis: 
+    - title: 
+      institution: Massachusetts Institute of Technology
+      year: 2022
+      description:
+        - Electrical Engineering and Computer Science, Mechanical Engineering
+        - Concentration in Economics
 
 - title: Experience
   type: time_table

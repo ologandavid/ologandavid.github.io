@@ -33,3 +33,5 @@ the nonlinear system using a zero order hold, and then designed an infinite hori
 for the system. Similarly, to implement the MPC, I implemented an iterative finite horizon LQR for a
 tunable horizon size N in the future. Ultimately, the controller was able to get the buggy to
 accelerate on the straight portions of the track, while slowing accordingly for turns.
+
+<b>Applied Skills:</b> OpenCV, Python, Coordinate Transformations, Object Detection, Transfer Learning
