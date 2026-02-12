@@ -14,7 +14,7 @@ of the driverless car industry to reach 93 billion by 2028, this project is gear
 addressing that growth. For this project, we drew inspiration from <a href="https://www.cmu.edu/buggy/"> CMU’s yearly buggy competition</a> for our track design and developed an optimal controller for the car.
 
 <b>Solution:</b>
-<!-- br> <span class="image right"><img src="images/24.695/bicycle.png" alt="" /></span> -->
+<br> <span class="image right"><img src="images/24.695/bicycle.png" alt="" /></span>
 To approximate the motion of the car, a simple bicycle model was used to define system dynamics. The
 car is modeled as a two wheeled vehicle with two degrees of freedom described by its longitudinal
 and lateral dynamics. As such, I designed a two-part controller that generates control commands

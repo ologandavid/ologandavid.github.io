@@ -192,6 +192,8 @@ exclude:
   - _pages/profiles.md
   - _posts/
   - _repositories/
+  - _news/
+  - _cv/
 
 keep_files:
   - CNAME
@@ -265,8 +267,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Ologan]
+  first_name: [David]
 
   style: apa
   locale: en

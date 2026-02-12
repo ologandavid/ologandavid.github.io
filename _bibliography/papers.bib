@@ -10,6 +10,11 @@
   organization={IEEE},
   selected={true},
   preview={underbrush.png},
+  abstract={Entanglements like vines and branches in natural settings or cords and pipes in human spaces prevent mobile robots from accessing many environments. Legged robots should be effective in these settings, and more so than wheeled or tracked platforms, but naive controllers quickly become entangled and stuck. In this paper we present a method for proprioception aimed specifically at the task of sensing entanglements of a robot's legs as well as a reaction strategy to disentangle legs during their swing phase as they advance to their next foothold. We demonstrate our proprioception and reaction strategy enables traversal of entanglements of many stiffnesses and geometries succeeding in 14 out of 16 trials in laboratory tests, as well as a natural outdoor environment.},
+  code = {https://github.com/robomechanics/quad-sdk},
+  pdf = {UnderbrushWalking.pdf},
+  arvix = {2304.02129},
+  video = {https://www.youtube.com/watch?v=aM3qdtm1Ets}
 }
 
 @article{ologanquad,
@@ -18,12 +23,34 @@
   year={2023},
   selected={true},
   preview={estimation.png},
+  abstract={This report presents extensions to Quad-SDK,
+  a full-stack, open-source ROS based framework for control
+  of quadrupedal locomotion. The modular software integrates
+  motion planning, control, simulation, and estimation, while
+  streamlining the development of novel robotics packages.
+  With this update, Quad-SDK now incorporates an Extended
+  Kalman Filter (EKF) for reliable onboard state estimation.
+  Additionally, a specialized controller designed for walking
+  through entanglements has been added, allowing the robot
+  to disentangle itself from vine-like obstructions. Both serve
+  to enable more reliable outdoor locomotion. Finally, several
+  improvements have been made to the software architecture.},
+  code={https://github.com/robomechanics/quad-sdk},
+  pdf={Quad_SDK_iROS_Late_Breaking_Results_Final_Abstract.pdf},
 }
 
-@inproceedings{steckler2019developing,
-  title={Developing Sequence Stratigraphic Modeling in Landlab to improve understanding of the tectonics in the Gulf of Kusadasi, Turkey},
-  booktitle={AGU Fall Meeting Abstracts},
-  volume={2019},
-  pages={EP21D--2227},
-  year={2019}
+@INPROCEEDINGS{2019AGUFMEP21D2227S,
+       author = {{Steckler}, M.~S. and {Hutton}, E. and {Ologan}, D. and {Tucker}, G.~E. and {Grall}, C. and {Gurcay}, S.},
+        title = "{Developing Sequence Stratigraphic Modeling in Landlab to improve understanding of the tectonics in the Gulf of Kusadasi, Turkey}",
+     keywords = {1824 Geomorphology: general, HYDROLOGY, 1825 Geomorphology: fluvial, HYDROLOGY, 1861 Sedimentation, HYDROLOGY, 1862 Sediment transport, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = 2019,
+       series = {AGU Fall Meeting Abstracts},
+       volume = {2019},
+        month = dec,
+          eid = {EP21D-2227},
+        pages = {EP21D-2227},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019AGUFMEP21D2227S},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+      abstract={The Aegean-Anatolian block is rotating counterclockwise with velocities that increase toward the Hellenic Arc subduction zone. Between the more rigid Anatolian block and the central Aegean Sea block, the West Anatolian Extensional Province (WAEP) is undergoing N-S extension with multiple active grabens. Subsiding E-W zones of extension alternate with more stable blocks, forming a series of promontories and embayments along the west coast of Turkey. The Gulf of Kusadasi is one of the most seismically active grabens of the WAEP, with multiple active fault systems. High-resolution Turkish multichannel seismic data image the Küçük Menderes Graben, the offshore extension of a rift cutting the highly extended Menderes Massif. The preserved strata contain thirteen sequences composed of prograding deltas with shingled clinoforms that have been correlated to glacioeustatic cycles going back to >1 Ma. The sequences are cut by faults, and they reveal associated patterns of subsidence and uplift. To decipher the tectonic and sedimentary history of the region we have developed a numerical sequence stratigraphic model to reproduce the stratal geometries and quantify the vertical motions. Sequence is a modular 2D (i.e., cross-sectional profile) sequence stratigraphic model that is written in Python and implemented with the CSDMS Landlab Toolkit. The model geophysical framework includes major factors that affect accommodation space: tectonism, eustasy, flexural isostatic compensation of sediment and water, and shortly, compaction as well. For sedimentary processes, the model uses a scale-integral approach in which differential equations represent the net effect of sediment transport and deposition for each depositional environment. The basic framework is a moving-boundary formulation, with a dynamic boundary at the shoreline between the coastal plain and the shelf. Submarine sediment transport and deposition are modeled as nonlinear diffusion processes. The components of the code are modular, and can accommodate upgrades and inclusion of different formulations. We will present the models and initial application to the Gulf of Kusadasi.}
 }
