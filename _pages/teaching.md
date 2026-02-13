@@ -16,14 +16,15 @@ nav_order: 6
 6.a01 Making with Technology, FISHBOTS (MIT)
 
 <b>Course Grading:</b>
-2.086 Numerical Computation for Mechanical Engineers (MIT) x2
+2.086 Numerical Computation for Mechanical Engineers (MIT)
 2.671 Measurement and Instrumentation (MIT)
 24.703 Numerical Methods in Engineering (CMU)
+
 
 <b>Outreach Initiatives:</b>
 SWE Day
 Teaching in Technology
 BlackinRobotics
-Gwens Firls
+Gwens Girls
 Pittsburgh Robotics Network
 
