@@ -5,9 +5,11 @@
       value: David Ologan
     - email: Email
       value: dologan@andrew.cmu.edu
+    - linked-in: Linked-In
+      value: www.linkedin.com/in/dologan
     - languages: Languages
       value: English, Cantonese
-
+    
 - title: Education
   type: time_table
   contents:
@@ -15,30 +17,24 @@
       institution: Carnegie Mellon University
       year: 2028
       description:
-        - Mechanical Engineering (Robotics)
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Mechanical Engineering
     - title: Master of Science - Research
       institution: Carnegie Mellon University
       year: 2024
       description:
-        - Mechanical Engineering (Robotics)
-        - Thesis: 
+        - Mechanical Engineering
     - title: 
       institution: Massachusetts Institute of Technology
       year: 2022
       description:
         - Electrical Engineering and Computer Science, Mechanical Engineering
-        - Concentration in Economics
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant
+      institution: Robomechanics Lab, Carnegie Mellon University
+      year: 2022 - 2026
       description:
         - Description 1.
         - Description 2.
@@ -46,45 +42,18 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+        - GEM PhD University Fellow
+    - year: 2024
+      items: 
+        - CMU Department of Mechanical Engineering Master's Student Symposium Best Poster
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
     - title: Topic 1.
