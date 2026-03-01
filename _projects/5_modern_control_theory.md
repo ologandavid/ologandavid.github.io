@@ -15,7 +15,7 @@ addressing that growth. For this project, we drew inspiration from <a href="http
 
 <b>Solution:</b>
 
-<div style="float: left; max-width: 420px; margin: 0 1.5rem 1rem 0;">
+<div style="float: right; max-width: 420px; margin: 0 1.5rem 1rem 0;">
   {% include figure.liquid
     loading="eager"
     path="assets/img/24.695/bicycle.png"
