@@ -89,6 +89,26 @@ ninja.data = [{
           description: "24.695 Modern Control Theory (Fall 2022)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_modern_control_theory/";
+            },},{id: "projects-aisle-assist",
+          title: 'Aisle Assist',
+          description: "2.009 Project Engineering Processes (Fall 2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_aisle_assist/";
+            },},{id: "projects-duck-hunt-video-game",
+          title: 'Duck Hunt Video Game',
+          description: "6.1151 Microcomputer Project Laboratory (Spring 2022)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_duck_hunt/";
+            },},{id: "projects-go-cart-power-circuitry",
+          title: 'Go Cart Power Circuitry',
+          description: "6.131 Power Electronics Laboratory (Fall 2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_go_cart_circuitry/";
+            },},{id: "projects-citgo-sign-inspired-yo-yo-39-s",
+          title: 'Citgo-Sign Inspired Yo-Yo&amp;#39;s',
+          description: "2.008 Design and Manufacturing II (Spring 2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_citgo_yoyos/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
