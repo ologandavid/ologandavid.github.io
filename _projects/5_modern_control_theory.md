@@ -14,7 +14,14 @@ of the driverless car industry to reach 93 billion by 2028, this project is gear
 addressing that growth. For this project, we drew inspiration from <a href="https://www.cmu.edu/buggy/"> CMU’s yearly buggy competition</a> for our track design and developed an optimal controller for the car.
 
 <b>Solution:</b>
-<br> <span class="image right"><img src="images/24.695/bicycle.png" alt="" /></span>
+
+<div style="float: left; max-width: 420px; margin: 0 1.5rem 1rem 0;">
+  {% include figure.liquid
+    loading="eager"
+    path="assets/img/24.695/bicycle.png"
+    title="example video"
+    class="img-fluid rounded z-depth-1" %}
+</div>
 To approximate the motion of the car, a simple bicycle model was used to define system dynamics. The
 car is modeled as a two wheeled vehicle with two degrees of freedom described by its longitudinal
 and lateral dynamics. As such, I designed a two-part controller that generates control commands
@@ -34,15 +41,14 @@ the nonlinear system using a zero order hold, and then designed an infinite hori
 for the system. Similarly, to implement the MPC, I implemented an iterative finite horizon LQR for a
 tunable horizon size N in the future. Ultimately, the controller was able to get the buggy to
 accelerate on the straight portions of the track, while slowing accordingly for turns.
-<!-- <div class="box alt">
-    <div class="row gtr-uniform">
-        <div class="col-5"><span class="image fit"><img src="images/24.695/track.png" alt="" /></span>
-        </div>
-        <div class="col-6"><span class="vid fit"><video controls>
-                    <source src="images/24.695/1080.mp4" type="video/mp4">
-                </video></span></div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.695/track.png" class="img-fluid rounded z-depth-1" %}
     </div>
-</div> -->
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.695/1080.mp4" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 In the event that localization information is missing from GPS, autonomous cars often use CV/LIDAR
 based methods for obstacle avoidance. In an effort to incorporate this into our model, I implemented
 EKF SLAM, a sensor fusion method used to augment our position estimate with local measurements.
@@ -55,14 +61,14 @@ To assess the performance of our simulation, we tested the model on a track mode
 buggy course. Driving simulations were then performed using Webots software. The model was able to
 complete the track in under 120 seconds and had an average deviation of less than 3 meters from the
 optimal tracked path.
-<!-- <div class="box alt">
-    <div class="row gtr-uniform">
-        <div class="col-6"><span class="image fit"><img src="images/24.695/LQR_Figure_1.png"
-                    alt="" /></span></div>
-        <div class="col-5"><span class="image fit"><img src="images/24.695/Figure_1.png"
-                    alt="" /></span></div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.695/LQR_Figure_1.png" class="img-fluid rounded z-depth-1" %}
     </div>
-</div> -->
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.695/Figure_1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 This performance was substantially better than the real-world buggy raced every year at CMU. By the
 end of the course, each controller design was able to clear desired performance evaluations.
 

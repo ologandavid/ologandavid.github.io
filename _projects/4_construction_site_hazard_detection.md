@@ -65,15 +65,23 @@ incorporating velocities or making predictions about future worker behavior. Ext
 work with multiple cameras and occlusions also remains future work. Ultimately, we were able to
 successfully track the location of each worker in a variety of environments.
 
-<!-- <div class="box alt">
-<div class="row gtr-uniform">
-    <div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
-                <source src="images/24.678/test4.mp4" type="video/mp4">
-            </video></span></div>
-    <div class="col-6"><span class="vid fit"><video width="640" height="480" controls>
-                <source src="images/24.678/vid3.mp4" type="video/mp4">
-            </video></span></div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.678/test4.mp4" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/24.678/vid3.mp4" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-</div> -->
 
 <b>Applied Skills: OpenCV, Python, Coordinate Transformations, Object Detection, Transfer Learning</b>
+
+<div class="mt-3">
+    <a href="https://github.com/ologandavid/ConstructionSiteHazardDetection" class="btn btn-sm btn-outline-primary me-2">
+    <i class="fab fa-github me-1"></i> Code
+    </a>
+
+    <a href="/assets/pdf/FinalPresentation.pptx" class="btn btn-sm btn-outline-primary">
+    <i class="fas fa-file-alt me-1"></i> Presentation
+    </a>
+</div>
