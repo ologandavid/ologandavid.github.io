@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Hunt Handheld Console — David Ologan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-project="duck-hunt-console">
+  <site-header></site-header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="detail-head" id="detail-header"></div>
+
+        <article class="prose wide">
+          <p class="lede">A PSoC5 game console — Duck Hunt, Pong, and Tic-Tac-Toe — driving a VGA monitor and paired with a wireless Bluetooth controller.</p>
+
+          <p><b>Objective.</b> In MIT's 6.1151, each student builds a final project capping off what we learned about embedded microcontrollers (8051 or PSoC). Mine was an assortment of games that showcase the modularity of the PSoC5, played with a companion wireless controller on a PSoC5LP Stick. The two processors run separate programs but stay fast enough not to impede gameplay, running three games: Tic-Tac-Toe, Pong, and a simple Duck Hunt.</p>
+
+          <figure><video src="/assets/img/6.1151/Media2.mov" controls muted loop playsinline></video></figure>
+
+          <p><b>Solution.</b> The design has two parts: a wireless controller powered by a PSoC Stick, and a receiver / VGA connector on the main PSoC5. The Stick encodes controller button states and transmits them wirelessly to the main PSoC5, which runs the game mechanics and updates the monitor.</p>
+
+          <div class="media-row">
+            <figure><img src="/assets/img/6.1151/Picture3.jpg" alt="Controller"></figure>
+            <figure><img src="/assets/img/6.1151/Picture4.jpg" alt="Main board"></figure>
+          </div>
+
+          <p>On the main PSoC5, a VGA2 board was wired for 2-bit color using an 74LS245N, alongside an HC-05 Bluetooth module and LCD display for communication with the controller. The PSoC Stick carries four buttons, a joystick potentiometer, and an HC-05 module.</p>
+
+          <div class="media-row">
+            <figure><img src="/assets/img/6.1151/Picture1.png" alt="System diagram"></figure>
+            <figure><img src="/assets/img/6.1151/Picture2.png" alt="System diagram"></figure>
+          </div>
+
+          <p>The Stick encodes joystick positions and button states as bytes representing cursor velocities and presses. The main PSoC5 generates each frame from the current game state and writes it to the buffer to update the monitor. An ISR receives bytes and updates cursor positions and remaining targets without conflicting with screen-refresh rates — triggered at a slower clock to prioritize refresh. Each game was written in C and selectable at startup.</p>
+
+          <figure><video src="/assets/img/6.1151/Media1.mp4" controls muted loop playsinline></video></figure>
+
+          <div class="skills-strip">
+            <span class="lbl">Applied skills</span>
+            C · Assembly · Circuit Design, Analysis &amp; Construction · PSoC · VGA · Bluetooth
+          </div>
+        </article>
+
+        <hr class="divider">
+        <div class="detail-links" id="detail-nav"></div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="/content/projects.js"></script>
+  <script src="/content/site.js"></script>
+  <script src="/scripts/site.js"></script>
+  <script src="/scripts/render.js"></script>
+</body>
+</html>

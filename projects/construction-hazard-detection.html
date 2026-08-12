@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction-Site Hazard Detection — David Ologan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-project="construction-hazard-detection">
+  <site-header></site-header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="detail-head" id="detail-header"></div>
+
+        <article class="prose wide">
+          <p class="lede">Image- and point-cloud-based computer vision that tracks workers across a job site and warns them when they enter falling-object danger zones.</p>
+
+          <p><b>Objective.</b> Fatal injuries on construction sites have risen sharply in recent years. My team devised a method to improve worker awareness and safety on job sites — reducing downtime and preventable accidents.</p>
+
+          <p><b>Solution.</b> We combined image processing and point-cloud vision to track worker movement and notify them when they enter dangerous regions, targeting the most common hazard: being struck by falling objects. First we preprocess the worksite by selecting four fixed reference points in the camera's field of view. Assuming a fixed camera and that workers stand on a common ground plane, we compute a static homography that maps pixel coordinates to world coordinates, accounting for the camera's perspective.</p>
+
+          <p>We then segment the video stream into frames for a <b>YOLOv7</b> network, refined via transfer learning on our construction-site dataset. YOLO detects workers and outputs bounding boxes; we estimate each worker's position from the bottom-center of the box, map it to world coordinates through the homography, and stitch frames into an animation of worker positions over time. Danger areas are predefined, though a network could be trained to flag risky objects automatically.</p>
+
+          <p><b>Results.</b> We render worker locations from a bird's-eye view. Future work includes richer position representations (velocities, behavior prediction), multi-camera coverage, and occlusion handling. Across a variety of environments we successfully tracked each worker's location.</p>
+
+          <div class="media-row">
+            <figure><video src="/assets/img/24.678/test4.mp4" controls muted loop playsinline></video></figure>
+            <figure><video src="/assets/img/24.678/vid3.mp4" controls muted loop playsinline></video></figure>
+          </div>
+
+          <div class="skills-strip">
+            <span class="lbl">Applied skills</span>
+            OpenCV · Python · Coordinate Transformations · Object Detection · Transfer Learning
+          </div>
+        </article>
+
+        <hr class="divider">
+        <div class="detail-links" id="detail-nav"></div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="/content/projects.js"></script>
+  <script src="/content/site.js"></script>
+  <script src="/scripts/site.js"></script>
+  <script src="/scripts/render.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- ===========================================================================
+     PROJECT DETAIL TEMPLATE
+     To add a new project:
+       1. Copy this file to  projects/<your-slug>.html
+       2. Set  data-project="<your-slug>"  on <body> (must match the slug in
+          content/projects.js — the header, title, links come from there).
+       3. Write the write-up inside <div class="prose"> ... </div>.
+     Helpers you can use in the body:
+       <figure><img src="/assets/img/.../pic.png" alt=""><figcaption>…</figcaption></figure>
+       <figure><video src="/assets/img/.../clip.mp4" controls muted loop playsinline></video></figure>
+       <div class="media-row"> …several <figure>s side by side… </div>
+       <figure class="figure-float-right"> … </figure>   (text wraps around it)
+     =========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — David Ologan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-project="REPLACE-WITH-SLUG">
+  <site-header></site-header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="detail-head" id="detail-header"></div>
+
+        <article class="prose wide">
+          <p class="lede">Short one-line summary of the project.</p>
+          <p>Body text…</p>
+
+          <div class="skills-strip">
+            <span class="lbl">Applied skills</span>
+            Skill one · Skill two · Skill three
+          </div>
+        </article>
+
+        <hr class="divider">
+        <div class="detail-links" id="detail-nav"></div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="/content/projects.js"></script>
+  <script src="/content/site.js"></script>
+  <script src="/scripts/site.js"></script>
+  <script src="/scripts/render.js"></script>
+</body>
+</html>

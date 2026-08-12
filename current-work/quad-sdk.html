@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quad-SDK — David Ologan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+  <site-header></site-header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="detail-head">
+          <a class="backlink" href="/current-work.html">← current work</a>
+          <p class="kicker">Current work · Open source</p>
+          <h1>Quad-SDK</h1>
+        </div>
+
+        <article class="prose wide">
+          <p class="lede">I'm the maintainer of Quad-SDK, a full-stack, open-source, ROS-based framework for agile quadrupedal locomotion developed in CMU's Robomechanics Lab.</p>
+
+          <p>Quad-SDK vertically integrates planning, control, estimation, communication, and development tooling so researchers can go from simulation to hardware across many platforms with minimal changes. Its modular architecture lets you swap in your own implementation of any component while relying on the rest of the stack — and as maintainer I steward its architecture, releases, and the growing community around it (900+ GitHub stars).</p>
+
+          <figure>
+            <video src="/assets/img/ongoing/quadsdk.mp4" controls muted playsinline loop preload="metadata"></video>
+            <figcaption>Quad-SDK in action.</figcaption>
+          </figure>
+
+          <h3>What's inside</h3>
+          <ul>
+            <li><strong>Planning</strong> — a global body planner (RRT-Connect with mixed motion primitives), a nonlinear-MPC local planner, a Raibert-style footstep planner, and CBS-based multi-robot coordination.</li>
+            <li><strong>Control &amp; estimation</strong> — a real-time control loop, an Extended Kalman Filter for onboard state estimation, and a momentum-based external wrench observer, all behind a hardware-abstraction layer.</li>
+            <li><strong>Learned controllers</strong> — support for training and deploying learned (reinforcement-learning) policies that drop into the same interface as the model-based controllers, in simulation and on hardware.</li>
+            <li><strong>Simulation</strong> — Gazebo and MuJoCo backends (plus an NVIDIA IsaacSim beta), force-injection plugins, and multi-robot scenarios.</li>
+            <li><strong>Tooling</strong> — logging &amp; playback, batch and performance testing, and MATLAB/Python post-processing utilities.</li>
+          </ul>
+          <p>Built on ROS with the Pinocchio dynamics library and released under the MIT license, Quad-SDK supports platforms including the Ghost Robotics Spirit and Vision60, Unitree Go1/Go2/A1/B2, and Boston Dynamics Spot.</p>
+
+          <h3>Papers</h3>
+          <ul class="paper-list">
+            <li>
+              <a href="/assets/pdf/Quad_SDK_ICRA_Abstract.pdf" target="_blank" rel="noopener">Quad-SDK: Full Stack Software Framework for Agile Quadrupedal Locomotion</a>
+              <div class="muted">J. Norby, Y. Yang, A. Tajbakhsh, J. Ren, J. K. Yim, A. Stutt, Q. Yu, N. Flowers, A. M. Johnson · ICRA 2022 Workshop on Legged Robots</div>
+            </li>
+            <li>
+              <a href="/assets/pdf/Quad_SDK_iROS_Late_Breaking_Results_Final_Abstract.pdf" target="_blank" rel="noopener">Quad-SDK Update: Estimation, Underbrush, and Other Improvements</a>
+              <div class="muted"><span class="me">D. Ologan</span>, A. Tajbakhsh, J. K. Yim, Y. Yang, J. Norby, J. Ren, S. Garcia Gonzalez, A. M. Johnson · IROS 2023 Late-Breaking Results</div>
+            </li>
+          </ul>
+
+          <div class="detail-links">
+            <a class="btn btn--primary" href="https://github.com/robomechanics/quad-sdk" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              Code
+            </a>
+            <a class="btn" href="https://robomechanics.github.io/quad-sdk/latest/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3v5h5"/><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+              Docs
+            </a>
+            <a class="btn" href="https://www.youtube.com/watch?v=kSXKjTxKpuA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+              Video
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="/content/site.js"></script>
+  <script src="/scripts/site.js"></script>
+</body>
+</html>

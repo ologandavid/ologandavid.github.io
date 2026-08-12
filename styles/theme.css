@@ -1,0 +1,117 @@
+/* ==========================================================================
+   theme.css — DESIGN TOKENS
+   --------------------------------------------------------------------------
+   This is the ONLY file you need to touch to reskin the whole site.
+   Everything (colors, fonts, spacing, corners) is a variable defined here
+   and used by styles/main.css. Change a value here -> it changes everywhere.
+
+   HOW TO SWAP THE COLOR SCHEME:
+     1. Pick a new accent hex below (see the "ACCENT" block).
+     2. Optionally tweak the neutral "paper/ink" values.
+     3. Reload the page. That's it.
+
+   A few ready-made accent options are listed as comments so you can swap
+   in one line. Light mode and dark mode are defined separately so each can
+   be tuned independently; the theme toggle in the nav flips between them.
+   ========================================================================== */
+
+:root {
+  /* ---- ACCENT ---------------------------------------------------------
+     The single signature color of the site (links, highlights, markers).
+     Current pick: a refined steel-blue — clean and professional.
+     To try another vibe, comment this out and uncomment one below.
+  */
+  --accent:        #2f5fd0;   /* steel blue           (current)           */
+  --accent-hover:  #2449a6;   /* darker blue for hover                     */
+  /* --accent: #0f766e; --accent-hover: #115e59;   teal (cool, calm)       */
+  /* --accent: #4338ca; --accent-hover: #3730a3;   indigo                  */
+  /* --accent: #b45309; --accent-hover: #92400e;   amber (earthy)          */
+  /* --accent: #c2410c; --accent-hover: #9a3412;   clay / burnt orange     */
+  /* --accent: #9d174d; --accent-hover: #831843;   berry (bold)            */
+
+  /* ---- NEUTRALS (LIGHT MODE) ------------------------------------------ */
+  --bg:            #fbfbfc;   /* page background — cool near-white         */
+  --surface:       #ffffff;   /* cards / raised surfaces                   */
+  --surface-2:     #f1f3f5;   /* subtle alt surface (hover, wells)         */
+  --ink:           #16181d;   /* primary text — cool near-black           */
+  --ink-soft:      #4a4f57;   /* secondary text                          */
+  --ink-faint:     #878d96;   /* meta text, captions                     */
+  --border:        #e5e8ec;   /* hairlines, card borders                 */
+  --border-strong: #d0d5db;   /* emphasized borders                      */
+  --grid-line:     #eef0f3;   /* faint engineered grid/tick marks        */
+
+  /* selection + focus derived from accent */
+  --accent-wash:   color-mix(in srgb, var(--accent) 12%, transparent);
+  --accent-tint:   color-mix(in srgb, var(--accent) 6%,  var(--bg));
+
+  /* ---- TYPOGRAPHY -----------------------------------------------------
+     Display = characterful headings (loaded in each page's <head>).
+     Body    = fast system sans. Mono = the "engineered" label detailing.
+     To change the display font, edit the <link> in each HTML <head> AND the
+     first name in --font-display below.
+  */
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Type scale (fluid — grows gently with viewport). Kept restrained. */
+  --step--1: clamp(0.76rem, 0.74rem + 0.10vw, 0.82rem);
+  --step-0:  clamp(0.90rem, 0.88rem + 0.10vw, 0.96rem);
+  --step-1:  clamp(1.02rem, 0.98rem + 0.25vw, 1.18rem);
+  --step-2:  clamp(1.20rem, 1.10rem + 0.50vw, 1.55rem);
+  --step-3:  clamp(1.45rem, 1.25rem + 0.95vw, 2.05rem);
+  --step-4:  clamp(1.80rem, 1.50rem + 1.60vw, 2.80rem);
+
+  /* ---- SPACING / LAYOUT ---------------------------------------------- */
+  --space-1: 0.35rem;
+  --space-2: 0.6rem;
+  --space-3: 1rem;
+  --space-4: 1.6rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  --content-width: 1080px;   /* main column max width */
+  --narrow-width:  720px;    /* prose / reading width */
+
+  /* ---- SHAPE / DEPTH -------------------------------------------------- */
+  --radius:    8px;
+  --radius-lg: 12px;
+  --border-w:  1px;
+  --shadow:    0 1px 2px rgba(20,25,40,.04);
+  --shadow-lg: 0 1px 3px rgba(20,25,40,.06), 0 8px 24px -16px rgba(20,25,40,.18);
+
+  --transition: 150ms ease;
+}
+
+/* ==========================================================================
+   DARK MODE
+   Toggled by data-theme="dark" on <html> (set by scripts/site.js).
+   Only the values that differ from light are redefined here.
+   ========================================================================== */
+:root[data-theme="dark"] {
+  --accent:        #7aa2ff;   /* brighter steel-blue reads better on dark  */
+  --accent-hover:  #a2c0ff;
+  /* keep the dark accent in the same family as your light accent above */
+
+  --bg:            #0e1013;
+  --surface:       #15181d;
+  --surface-2:     #1d222a;
+  --ink:           #e8eaed;
+  --ink-soft:      #a2a9b4;
+  --ink-faint:     #6c727c;
+  --border:        #262b33;
+  --border-strong: #363d47;
+  --grid-line:     #1a1e24;
+
+  --accent-wash:   color-mix(in srgb, var(--accent) 16%, transparent);
+  --accent-tint:   color-mix(in srgb, var(--accent) 8%,  var(--bg));
+
+  --shadow:    0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.7);
+  --shadow-lg: 0 2px 8px rgba(0,0,0,.5), 0 24px 48px -20px rgba(0,0,0,.8);
+}
+
+/* Light is the DEFAULT theme. Dark mode applies only when the user toggles it
+   (which sets data-theme="dark"); the OS dark-mode preference no longer
+   auto-switches the site. To go back to following the OS, restore an
+   @media (prefers-color-scheme: dark) block that sets the dark tokens. */

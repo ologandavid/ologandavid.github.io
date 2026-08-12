@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Ologan — Robotics PhD, Carnegie Mellon</title>
+  <meta name="description" content="David Ologan is a Mechanical Engineering PhD student at Carnegie Mellon University working on reinforcement learning and control for legged robot locomotion in natural terrain.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+
+  <!-- Open Graph (link previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="David Ologan — Robotics PhD, Carnegie Mellon">
+  <meta property="og:description" content="Reinforcement learning and control for legged robot locomotion in natural terrain.">
+  <meta property="og:url" content="https://ologandavid.github.io/">
+
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <!-- Anti-flash: apply saved theme before first paint. Keep this. -->
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+  <site-header></site-header>
+
+  <main>
+    <!-- ================= HERO (edit this text directly) ================= -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="kicker">PhD Student · Carnegie Mellon</p>
+          <h1>David Ologan</h1>
+          <p class="hero__bio">
+            I'm a second-year PhD student in Mechanical Engineering at
+            <strong>Carnegie Mellon University</strong>, working on reinforcement
+            learning and optimization-based control for autonomous legged
+            locomotion in complex, contact-rich natural environments. I'm advised by
+            <a href="https://www.meche.engineering.cmu.edu/directory/bios/johnson-aaron.html">Prof. Aaron Johnson</a>
+            in the <a href="https://www.cmu.edu/me/robomechanicslab/">Robomechanics Lab</a>,
+            and supported by the
+            <a href="https://www.gemfellowship.org">GEM PhD University Fellowship</a>.
+          </p>
+          <div class="hero__meta">
+            <span><span class="k">based</span> Pittsburgh, PA</span>
+            <span><span class="k">prev</span> MIT · B.S. ME + EECS</span>
+            <span><span class="k">seeking</span> Fall 2026 / Spring 2027 internship</span>
+          </div>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="/projects.html">View projects</a>
+            <a class="btn" href="/assets/pdf/David_Ologan_Resume.pdf" target="_blank">Résumé (PDF)</a>
+          </div>
+          <div class="hero__socials" id="hero-socials"></div>
+        </div>
+        <div class="portrait">
+          <img src="/assets/img/prof_pic_web.jpg" alt="Portrait of David Ologan" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Selected work</p>
+          <h2>Featured projects</h2>
+          <p class="lead">A few things I've built across robotics, controls, machine learning, and hardware. <a href="/projects.html">See all projects →</a></p>
+        </div>
+        <div id="featured-projects" class="card-grid card-grid--2"></div>
+      </div>
+    </section>
+
+    <!-- ================= NEWS + SELECTED PUBLICATION ================= -->
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <div class="section-head">
+            <p class="kicker">Recent</p>
+            <h2>News</h2>
+          </div>
+          <ul id="news" class="news"></ul>
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="kicker">Latest paper</p>
+            <h2>Publication</h2>
+          </div>
+          <div id="selected-pub"></div>
+          <p class="mt-4"><a class="btn btn--sm" href="/research.html">All publications →</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <!-- content + logic (order matters: data, then chrome, then render) -->
+  <script src="/content/site.js"></script>
+  <script src="/content/projects.js"></script>
+  <script src="/content/publications.js"></script>
+  <script src="/scripts/site.js"></script>
+  <script src="/scripts/render.js"></script>
+</body>
+</html>

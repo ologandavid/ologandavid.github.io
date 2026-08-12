@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy-Efficient ARM Processor Design — David Ologan</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body data-project="nanoelectronics-arm-processor">
+  <site-header></site-header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="detail-head" id="detail-header"></div>
+
+        <article class="prose wide">
+          <p class="lede">Redesigning the device physics of an ARM microprocessor to meet a 200 MHz spec within an energy budget.</p>
+
+          <p><b>Objective.</b> In 6.012, students learn the fundamentals of semiconductor physics and how to analyze and predict device performance from scaling laws and physical structure. The final challenge: take an existing ARM microprocessor structure and propose an energy-efficient design that meets spec and operates at 200 MHz.</p>
+
+          <p><b>Solution.</b> Over the last two weeks of the semester, my group made four changes to the existing semiconductor design to optimize performance. We decreased the oxide thickness to 4 nm to reduce parasitic capacitance on the MOSFET; changed the spacer material to one with lower permittivity to cut leakage capacitance; increased source/drain doping to the upper limit to raise channel carrier count (and thus current); and lowered the operating voltage to 1.75 V to meet spec.</p>
+
+          <figure><img src="/assets/img/6.012/Processor.png" alt="Processor design"></figure>
+
+          <p>Microprocessor performance was modeled in Sentaurus, and gate-capacitance calculations were done in MATLAB. See the paper for the full analysis.</p>
+
+          <div class="skills-strip">
+            <span class="lbl">Applied skills</span>
+            MATLAB · Sentaurus TCAD · Semiconductor Physics · MOSFET Scaling
+          </div>
+        </article>
+
+        <hr class="divider">
+        <div class="detail-links" id="detail-nav"></div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="/content/projects.js"></script>
+  <script src="/content/site.js"></script>
+  <script src="/scripts/site.js"></script>
+  <script src="/scripts/render.js"></script>
+</body>
+</html>
