@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Duck Hunt Handheld Console — David Ologan</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <meta property="og:image" content="https://ologandavid.github.io/assets/img/og.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Duck Hunt Handheld Console — David Ologan">
+  <meta property="og:description" content="A PSoC5 game console — Duck Hunt, Pong, and Tic-Tac-Toe — driving a VGA monitor and paired with a wireless Bluetooth controller.">
+  <meta property="og:url" content="https://ologandavid.github.io/projects/duck-hunt-console.html">
+  <meta name="twitter:title" content="Duck Hunt Handheld Console — David Ologan">
+  <meta name="twitter:description" content="A PSoC5 game console — Duck Hunt, Pong, and Tic-Tac-Toe — driving a VGA monitor and paired with a wireless Bluetooth controller.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/styles/theme.css">
   <link rel="stylesheet" href="/styles/main.css">
   <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
@@ -22,7 +30,7 @@
 
           <p><b>Objective.</b> In MIT's 6.1151, each student builds a final project capping off what we learned about embedded microcontrollers (8051 or PSoC). Mine was an assortment of games that showcase the modularity of the PSoC5, played with a companion wireless controller on a PSoC5LP Stick. The two processors run separate programs but stay fast enough not to impede gameplay, running three games: Tic-Tac-Toe, Pong, and a simple Duck Hunt.</p>
 
-          <figure><video src="/assets/img/6.1151/Media2.mov" controls muted loop playsinline></video></figure>
+          <figure><video src="/assets/img/6.1151/Media2.mp4" controls muted loop playsinline></video></figure>
 
           <p><b>Solution.</b> The design has two parts: a wireless controller powered by a PSoC Stick, and a receiver / VGA connector on the main PSoC5. The Stick encodes controller button states and transmits them wirelessly to the main PSoC5, which runs the game mechanics and updates the monitor.</p>
 

@@ -50,7 +50,9 @@
      To change the display font, edit the <link> in each HTML <head> AND the
      first name in --font-display below.
   */
-  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  /* Headings use a serif for warmth/character; body stays the clean sans below.
+     Swap this line to go back to sans, or to a web font (see README). */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
   --font-body:    -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
   --font-mono:    ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 

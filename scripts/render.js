@@ -172,10 +172,11 @@ function initAbout() {
   }
   p.innerHTML = items.map((ph) => {
     const isVid = /\.(mp4|mov|webm)$/i.test(ph.src);
-    const media = isVid
-      ? `<video src="${ph.src}" controls muted playsinline loop preload="metadata"></video>`
-      : `<img src="${ph.src}" alt="${ph.caption || ""}" loading="lazy">`;
-    return `<figure>${media}${ph.caption ? `<figcaption>${ph.caption}</figcaption>` : ""}</figure>`;
+    if (isVid) {
+      return `<figure><video src="${ph.src}" controls muted playsinline loop preload="metadata"></video>${ph.caption ? `<figcaption>${ph.caption}</figcaption>` : ""}</figure>`;
+    }
+    const cap = ph.caption ? `<figcaption class="gallery__cap">${ph.caption}</figcaption>` : "";
+    return `<figure><img src="${ph.src}" alt="${ph.caption || ""}" loading="lazy">${cap}</figure>`;
   }).join("");
 }
 
@@ -292,6 +293,56 @@ function initDetailHeader() {
   }
 }
 
+/* ---- nav shadow on scroll ---------------------------------------------- */
+function initNavScroll() {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  const onScroll = () => nav.classList.toggle("nav--scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
+
+/* ---- back-to-top button ------------------------------------------------- */
+function initBackToTop() {
+  const btn = document.createElement("button");
+  btn.className = "to-top";
+  btn.setAttribute("aria-label", "Back to top");
+  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>';
+  document.body.appendChild(btn);
+  const onScroll = () => btn.classList.toggle("show", window.scrollY > 500);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+}
+
+/* ---- gallery lightbox --------------------------------------------------- */
+function initLightbox() {
+  if (!document.querySelector(".gallery")) return;
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.innerHTML = '<button class="lightbox__close" aria-label="Close">&times;</button><img alt="">';
+  document.body.appendChild(box);
+  const pic = box.querySelector("img");
+  const close = () => { box.classList.remove("open"); pic.src = ""; document.body.style.overflow = ""; };
+  document.addEventListener("click", (e) => {
+    const g = e.target.closest && e.target.closest(".gallery img");
+    if (g) { pic.src = g.currentSrc || g.src; box.classList.add("open"); document.body.style.overflow = "hidden"; return; }
+    if (e.target.closest && e.target.closest(".lightbox")) close();
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+}
+
+/* ---- reveal on scroll (fade/slide up) ---------------------------------- */
+function initReveal() {
+  if (!("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const sel = ".card, .pub, .tl-item, .cv-block, .edu-item, .section-head, .prose figure, .media-row, .figs-even, .gallery";
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(sel).forEach((el) => { el.classList.add("reveal"); io.observe(el); });
+}
+
 /* ---- boot --------------------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
   initHome();
@@ -304,4 +355,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initTeaching();
   initCV();
   initDetailHeader();
+  // cosmetic behaviors (after content is rendered)
+  initNavScroll();
+  initBackToTop();
+  initLightbox();
+  initReveal();
 });
